@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Paper Sharpener" width="300">
+</p>
+
 # ✏️ Paper Sharpener
 
 > Agentic skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that help you write better academic papers — review simulation, writing improvement, and revision assistance.
