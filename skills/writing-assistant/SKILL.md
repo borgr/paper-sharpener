@@ -214,6 +214,7 @@ When crafting replacement text:
   a different writing personality.
 - **Minimal intervention.** Fix the identified issue without rewriting surrounding text
   that works fine. The smallest edit that solves the problem is the best edit.
+- **Minimize author's effort.** In collaborator mode, Use inline markup (`\old{old}\<shorthand>{new}` within shared text) for small changes. Only use block-     style markup (full `\old{...}` / `\<shorthand>{...}` paragraphs) when the text is genuinely rewritten. If most of a paragraph is unchanged, use inline even   if there are several small edits — the author should never have to mentally diff two near-identical blocks.
 - **One issue per edit.** Don't bundle multiple unrelated fixes into one replacement — the
   user should be able to accept/reject each independently.
 - **Preserve meaning.** Never change what the author is saying, only how they say it.
