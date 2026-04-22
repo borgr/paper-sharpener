@@ -2,7 +2,7 @@
 
 > Agentic skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that help you write better academic papers — review simulation, writing improvement, and revision assistance.
 
-Based on the [evergrowing writing tips document](https://docs.google.com/document/d/14Wax8M5w8F_8miDlYJ9-I6wqpelxlXjCEUbkNzNMqqE/edit?usp=sharing).
+These aren't just prompts. The skills are built on a comprehensive [academic writing guide](https://docs.google.com/document/d/14Wax8M5w8F_8miDlYJ9-I6wqpelxlXjCEUbkNzNMqqE/edit?usp=sharing) — a community-maintained document compiled by [Leshem Choshen](https://github.com/borgr) covering everything from sentence-level craft (stress control, nominalization, parallelism) to paper structure, figure design, LaTeX tips, and rebuttal strategy. The skills encode this knowledge into structured, interactive workflows.
 
 ---
 
