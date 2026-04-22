@@ -1,0 +1,9 @@
+{
+  "name": "paper-sharpener",
+  "description": "Academic paper review and writing improvement skills for Claude Code",
+  "version": "1.0.0",
+  "authors": [
+    { "name": "Leshem Choshen" },
+    { "name": "Yotam Perlitz" }
+  ]
+}
