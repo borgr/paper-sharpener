@@ -24,7 +24,7 @@ Simulates a full multi-reviewer academic paper review. Three independent reviewe
 
 ### ✍️ Writing Assistant
 
-Improves your academic writing at any granularity — from a single sentence to a full section. Analyzes text against writing principles (sentence strength, stress control, precision, parallelism, etc.) and proposes rewrites with cited reasoning.
+Improves your academic writing at any granularity — from a single sentence to a full section. Analyzes text against writing principles (sentence strength, stress control, precision, parallelism, etc.) and proposes rewrites with cited reasoning. The tips are based on the [ever-growing guide](https://docs.google.com/document/d/14Wax8M5w8F_8miDlYJ9-I6wqpelxlXjCEUbkNzNMqqE/edit?usp=sharing).
 
 > **Try:** *"improve this paragraph"* · *"rewrite this section"* · *"check my writing"* · *"make this sentence stronger"*
 
