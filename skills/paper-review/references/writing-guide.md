@@ -26,6 +26,37 @@ A good option when it is hard to start is to begin by filling in the obvious inf
 
 ---
 
+### Value Level
+
+Clarity is a means, not the goal. A clear paragraph that does nothing for its readers is a clear waste of their time. Before polishing, ask what this passage changes for the people who will read it.
+
+#### Open with a problem of your readers, not with background
+
+A problem has two parts: something unstable in what the field currently believes, and a cost or a benefit that follows for these readers. Background, definitions, and widening generalizations postpone both.
+
+**Examples:**
+
+| Not yet a problem | A problem |
+|-------------------|-----------|
+| "Evaluating LLMs has received much attention in recent years." | "Leaderboards are read as if scores were stable, but reordering the answer options flips the ranking -- so the models we deploy may be chosen by an artifact." |
+| "Word embeddings are widely used in NLP." | "Embeddings are assumed to encode meaning, yet antonyms sit closer than synonyms -- so similarity scores mislead exactly where they are trusted most." |
+
+#### Readers scan for tension, not for addition
+
+Writers reach for "and," "furthermore," and "moreover." Readers of an argument look for "but," "however," "although," "nonetheless," "inconsistent," and "anomaly," usually beside a marker of what is believed ("widely," "commonly reported," "accepted"). When a paragraph feels flat, check whether an "and" should have been a "but."
+
+#### An error is a stronger opening than a gap
+
+A gap assumes knowledge is bounded and that this particular hole is the one worth filling. It usually is not bounded, so there are endless holes and filling one is not interesting by itself.
+
+> E.g., "no one has studied X in low-resource languages" becomes "the field assumes X transfers across languages; in low-resource ones it reverses."
+
+#### Claim importance in your readers' words
+
+Every community keeps its own vocabulary for what counts -- reproducible, sample-efficient, faithful, deployable, identifiable. Importance asserted in your own words does not register. Collect the value words of your target venue, from its call for papers or the titles it recently accepted, and use them in the sentences that do the work of claiming importance.
+
+---
+
 ### Story Level
 
 #### Take the reader on a journey of understanding, not the journey you made
@@ -161,6 +192,8 @@ In strong sentences, the subject is not just present but actively performing a c
 | "While these are rare anecdotes, we see those as sparks of success that hint at the potential." | "While these are rare anecdotes, they serve as sparks of success that hint at the broader potential." |
 | "It is important to note that there is evidence suggesting..." | "The evidence suggests..." |
 
+**This is not a rule against the passive.** The subject should be whoever the paragraph is about, and sometimes that is the thing acted upon. In a paragraph about pollen, "pollen is dispersed by bees" is the better sentence; in a paragraph about bees, "bees disperse pollen" is. Choose the voice that keeps the paragraph's character in the subject, not the voice that sounds more active.
+
 #### Be precise, convey a clear and minimal statement
 
 > **Example:** "Another trait that agents are expected to show is a manner of interacting with an environment." becomes "Agents are also expected to interact with the environment."
@@ -200,6 +233,8 @@ This gives a feeling of continuity, reduces the mental load, and creates surpris
 - If we want the efficient aspect to be the focus: "Large Language Model (LLM) scaling laws predict the performance of an LLM **efficiently**"
 - More neutral emphasis: "Large Language Model (LLM) scaling laws efficiently predict the performance of an LLM"
 
+**When a sentence has nothing familiar to open with, suspect the argument, not the sentence.** If the only way to give it an opening is to invent a connection that is not in the draft, or to cut something the draft needs, you found a missing step in the reasoning. Ask what the step is instead of covering the seam with a linker ("furthermore," "in this context"). Reordering prose is how missing science gets noticed.
+
 #### You can control the stress, the emphasis
 
 If you want a part emphasized, beyond bold, the writing can do it. By default, the sentence ending carries the stress. So does the beginning. Both come near a strong pause and when the reader has little effort to keep sophisticated information for later.
@@ -222,6 +257,7 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 #### Reduce the reader's mental load
 
 - **Shorten the distance between connected concepts.** Many concepts in a sentence are connected (nouns to verbs, verbs to objects, adjectives to nouns, adverbs to verbs). Reducing the distance between related concepts, or the tree depth, makes it easier to follow.
+- **Length is not the defect, separation is.** A long sentence can read easily; what tires the reader is material standing between a subject and its verb, which is read as an interruption. Close the gap before shortening. E.g., "The tokenizer, which was trained on a paired corpus of two languages sharing no script, **fragments** rare words" becomes "The tokenizer **fragments** rare words, because it was trained on a paired corpus of two languages sharing no script."
 - **Reduce ambiguities.** When there is more than one meaning, the reader needs to solve it by context. Coreferences and anaphors like "it," "this," and "those" may refer to many entities. Use them, but sparsely.
 
 ---
@@ -413,6 +449,7 @@ Reviews relevant literature to position the contribution and highlight differenc
 - **Place it near the end.** It is a scholarly section, but not your main claim.
 - **Purpose:** Point to relevant work, give credit, differentiate your work from what others did.
 - It is not enough to have a list of works somehow related to yours. The works should be organized to explain how each relates to or differs from your paper.
+- **Each citation should deepen the problem, not settle it.** A work cited as "X was studied by Y" tells the reader the matter is handled. The same work cited as "Y reports X, which the results here contradict" keeps the tension you opened with alive.
 - Emphasize novelty concretely (by explaining differences and advantages). Just claiming to be novel is not convincing and does not give the reader useful information.
 - Avoid over-discussing works; sometimes comparing too much gives too much saliency to a work and gives the feeling you tried hard to find differences because there aren't many.
 
@@ -675,6 +712,8 @@ Check your target venue's requirements and maintain consistency across all graph
 ## Links and Resources
 
 - [Style: Ten Lessons in Clarity and Grace](https://www.google.com/search?q=Style+Ten+Lessons+in+Clarity+and+Grace) -- The unparalleled book for writing
+- [The Craft of Writing Effectively -- Larry McEnerney](https://www.youtube.com/watch?v=vtIzMaLkCaM) -- Why value precedes clarity, and how readers' codes of value work
+- [The Science of Scientific Writing -- Gopen & Swan](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing) -- Topic and stress positions, subject--verb distance
 - [How to Give Presentations -- MIT](https://www.youtube.com/watch?v=Unzc731iCUY)
 - [How to Write a Great Research Paper -- Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
 - [How to Give a Talk -- Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/how-to-write-a-great-research-proposal/)
