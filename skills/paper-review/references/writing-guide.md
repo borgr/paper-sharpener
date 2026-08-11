@@ -254,7 +254,11 @@ Examples: very, really, quite, extremely.
 
 > E.g., "we use the training scheme" becomes "we train"
 
-**Avoid underspecified "things."** Stuff, things, something, etc. are placeholder nouns. Find ways to replace them with more accurate words. (A higher level: replace words with their most specific counterparts, such as "decrease" becomes "plummets.")
+**Avoid underspecified "things."** Stuff, things, something, etc. are placeholder nouns. Find ways to replace them with more accurate words.
+
+**Avoid adjectives that fit everywhere.** A broad adjective usually hides a more informative one, and the specific one lets you say more while staying just as true. "Difficult" becomes costly, slow, brittle, or intractable; "good" becomes faster, cheaper, or more accurate. The specific adjective also tends to ask for a comparison -- faster than what, measured how -- and when you cannot supply it, the vagueness sits in the argument rather than in the wording.
+
+**More generally, reach for the most specific word of any part of speech.** E.g., "decrease" becomes "plummets."
 
 **Beware of "simply," "easily," "trivially," "clearly," and their friends.** You gain nothing, but you can lose much. When the reader doesn't understand, such a word might just add to the frustration.
 
@@ -521,6 +525,31 @@ Saliency should equal importance. Look at all the fonts -- they should all be bo
 #### Imagine the path the ideal eye would make
 
 One way to explain what is fast to grasp is by the number of points the eye needs to attend to, how far they are, and how long the overall path is. From this: minimize unnecessary details, related objects should be close to each other.
+
+### Floating Aids (Tables, Figures, Graphs)
+
+Floating aids should be as standalone as possible. People tend to jump directly to these aids as they often contain the most important and densest information. Design them so they can explain themselves even without reading the surrounding text.
+
+#### Minimize caption dependencies
+
+Avoid requiring the reader to understand terms or definitions from the text to grasp the figure. If a term needs clarification to understand the visual, include it briefly in the caption or legend. However, aim to minimize this—if your figure requires heavy explanation, it may be too complex.
+
+**Examples:**
+
+| Less clear | Clearer |
+|-----------|---------|
+| `Lr \| k \| model` | `Learning rate \| depth \| model` |
+
+Full words are easier to parse, especially in figures. Use abbreviations only if: the table is too crowded, the abbreviation is well-known in the field, or it's an obvious part of the methodology (e.g., k-means).
+
+#### Caption placement and consistency
+
+Caption placement should be consistent throughout your paper and often depends on venue guidelines. Note that figures and tables are sometimes treated differently:
+
+- **Tables** are typically read during the main text flow, so captions often appear above the table
+- **Figures** often stand more independently and may be clearer with captions below, or without a caption at all (if the figure is truly self-explanatory)
+
+Check your target venue's requirements and maintain consistency across all graphics.
 
 ### Tips
 
