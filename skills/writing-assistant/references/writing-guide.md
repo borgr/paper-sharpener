@@ -168,6 +168,8 @@ If you have many "or"s and "and"s or complicated structure, perhaps you are tryi
 
 Especially when sentence lengths vary, which makes it less boring. Beginner writers use very simple sentences all the time, which makes it seem simple and makes no rhythm. It often makes us avoid those short sentences as we grew out of them. This is wrong. Did you hear the vibrations of the last sentence? A short sentence stands out and is memorable as it can all be kept in memory at the same time, or because attention is not spread, or because the rhythm stops. Regardless, it is a tool one might use.
 
+Still, length itself is rarely the defect. Before shortening, check what stands between the subject and its verb (see *Reduce the reader's mental load*).
+
 ---
 
 ### Sentence Level
@@ -256,8 +258,7 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 
 #### Reduce the reader's mental load
 
-- **Shorten the distance between connected concepts.** Many concepts in a sentence are connected (nouns to verbs, verbs to objects, adjectives to nouns, adverbs to verbs). Reducing the distance between related concepts, or the tree depth, makes it easier to follow.
-- **Length is not the defect, separation is.** A long sentence can read easily; what tires the reader is material standing between a subject and its verb, which is read as an interruption. Close the gap before shortening. E.g., "The tokenizer, which was trained on a paired corpus of two languages sharing no script, **fragments** rare words" becomes "The tokenizer **fragments** rare words, because it was trained on a paired corpus of two languages sharing no script."
+- **Shorten the distance between connected concepts.** Many concepts in a sentence are connected (nouns to verbs, verbs to objects, adjectives to nouns, adverbs to verbs). Reducing the distance between related concepts, or the tree depth, makes it easier to follow. The defect is the distance, not the length: a long sentence whose subject and verb sit together reads easily, so close the gap before you start cutting.
 - **Reduce ambiguities.** When there is more than one meaning, the reader needs to solve it by context. Coreferences and anaphors like "it," "this," and "those" may refer to many entities. Use them, but sparsely.
 
 ---
