@@ -26,38 +26,13 @@ A good option when it is hard to start is to begin by filling in the obvious inf
 
 ---
 
-### Value Level
+### Story Level
 
-Clarity is a means, not the goal. A clear paragraph that does nothing for its readers is a clear waste of their time. Before polishing, ask what this passage changes for the people who will read it.
-
-#### Open with a problem of your readers, not with background
-
-A problem has two parts: something unstable in what the field currently believes, and a cost or a benefit that follows for these readers. Background, definitions, and widening generalizations postpone both.
-
-**Examples:**
-
-| Not yet a problem | A problem |
-|-------------------|-----------|
-| "Evaluating LLMs has received much attention in recent years." | "Leaderboards are read as if scores were stable, but reordering the answer options flips the ranking -- so the models we deploy may be chosen by an artifact." |
-| "Word embeddings are widely used in NLP." | "Embeddings are assumed to encode meaning, yet antonyms sit closer than synonyms -- so similarity scores mislead exactly where they are trusted most." |
+Clarity is a means, not a goal -- the value of a text is what it changes for its readers, and a paragraph that is perfectly clear but changes nothing is a clear waste of their time.
 
 #### Readers scan for tension, not for addition
 
 Writers reach for "and," "furthermore," and "moreover." Readers of an argument look for "but," "however," "although," "nonetheless," "inconsistent," and "anomaly," usually beside a marker of what is believed ("widely," "commonly reported," "accepted"). When a paragraph feels flat, check whether an "and" should have been a "but."
-
-#### An error is a stronger opening than a gap
-
-A gap assumes knowledge is bounded and that this particular hole is the one worth filling. It usually is not bounded, so there are endless holes and filling one is not interesting by itself.
-
-> E.g., "no one has studied X in low-resource languages" becomes "the field assumes X transfers across languages; in low-resource ones it reverses."
-
-#### Claim importance in your readers' words
-
-Every community keeps its own vocabulary for what counts -- reproducible, sample-efficient, faithful, deployable, identifiable. Importance asserted in your own words does not register. Collect the value words of your target venue, from its call for papers or the titles it recently accepted, and use them in the sentences that do the work of claiming importance.
-
----
-
-### Story Level
 
 #### Take the reader on a journey of understanding, not the journey you made
 
@@ -269,6 +244,10 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 
 People will NOT understand. Assume they already half missed what was up until now, as they are not from the field, missed some context, or skimmed. Catch the moments where you hint, leave anything unsaid, or refer to something but do not open it ("this," "the model" -- which?) and fix it.
 
+#### Claim importance in your readers' words
+
+Every community keeps its own vocabulary for what counts -- reproducible, sample-efficient, faithful, deployable, identifiable. Importance asserted in your own words does not register. Collect the value words of your target venue, from its call for papers or the titles it recently accepted, and use them in the sentences that do the work of claiming importance.
+
 #### Minimize abbreviations and jargon
 
 Make every word as easy to understand as possible and require as little background knowledge as possible. If a term is useful and not absolutely known, define it. Abbreviations often seem less formal (e.g., "don't").
@@ -400,9 +379,17 @@ An extension of the abstract that sets up the problem, explains its importance, 
 
 #### Motivation
 
+A motivation names a problem, and a problem has two parts: something unstable in what the field currently believes, and a cost or a benefit that follows for these readers. Background, definitions, and widening generalizations postpone both.
+
+| Not yet a problem | A problem |
+|-------------------|-----------|
+| "Evaluating LLMs has received much attention in recent years." | "Leaderboards are read as if scores were stable, but reordering the answer options flips the ranking -- so the models we deploy may be chosen by an artifact." |
+| "Word embeddings are widely used in NLP." | "Embeddings are assumed to encode meaning, yet antonyms sit closer than synonyms -- so similarity scores mislead exactly where they are trusted most." |
+
 - **Choose the one that serves your purpose.** There are many motivations, and your idea has depth. But later you have findings -- pick the aspects that are most shown there, the ones that will lead a reader to already expect what you are doing from the problem setup.
 - **Keep it short, usually.** You want to convince the reader this is an important problem. In most cases, it is quite obvious for a reader in the field. Reduce details, remove unnecessary motivations to the motivations. E.g., "LLMs are common, so we should care about LLM speed, but they are slow when..." -- skip straight to the speed argument.
 - **Unless you provide a new problem.** If the point of your paper is to refocus what people study, this is central and worth the space.
+- **An error is a stronger opening than a gap.** A gap assumes knowledge is bounded and that this particular hole is the one worth filling. It usually is not bounded, so there are endless holes and filling one is not interesting by itself. E.g., "no one has studied X in low-resource languages" becomes "the field assumes X transfers across languages; in low-resource ones it reverses."
 
 ### Background
 
