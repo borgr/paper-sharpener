@@ -120,7 +120,8 @@ If the user just wants sentence/paragraph work and no story-level feedback, skip
 ### Step 3: Load the Writing Guide
 
 Read `references/writing-guide.md` (relative to this skill's directory). This is your
-reference for all writing principles. Internalize the sections relevant to the scope.
+reference for all writing principles. Internalize the sections relevant to the scope — its
+Contents table maps each principle to a subsection, so read those rather than the whole file.
 
 For quick fixes, you don't need the whole guide — just the relevant principle (e.g.,
 sentence strength, stress control).

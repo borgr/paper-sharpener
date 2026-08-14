@@ -1,0 +1,18 @@
+{
+  "name": "paper-sharpener",
+  "owner": {
+    "name": "Leshem Choshen",
+    "url": "https://github.com/borgr"
+  },
+  "metadata": {
+    "description": "Agentic skills for writing and reviewing academic papers."
+  },
+  "plugins": [
+    {
+      "name": "paper-sharpener",
+      "source": "./",
+      "description": "Academic paper review and writing improvement skills for Claude Code",
+      "version": "1.0.0"
+    }
+  ]
+}

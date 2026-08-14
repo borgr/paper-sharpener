@@ -10,6 +10,21 @@ This guide splits tips into several categories:
 
 It focuses on scientific and domain-specific papers (not Nature or Science), but much of it may be useful for other purposes.
 
+## Contents
+
+Read the subsection you need rather than the whole guide; each is self-contained.
+
+| Section | Subsections |
+|---|---|
+| [Writing](#writing) | [Where to Start?](#where-to-start) · [Story Level](#story-level) · [Section Level](#section-level) · [Paragraph Level](#paragraph-level) · [Sentence Level](#sentence-level) · [Word Choice](#word-choice) · [Exercises](#exercises) · [Collaboration in Writing](#collaboration-in-writing) |
+| [Sections in an Academic Paper](#sections-in-an-academic-paper) | [Title](#title) · [Abstract](#abstract) · [Introduction](#introduction) · [Background](#background) · [Method (Body)](#method-body) · [Experimental Setup](#experimental-setup) · [Results](#results) · [Analysis](#analysis) · [Related Work](#related-work) · [Conclusion and Discussion](#conclusion-and-discussion) · [Limitations](#limitations-section-or-in-text) · [Appendix](#appendix) · [Acknowledgments](#acknowledgments) |
+| [Common Academic Writing Needs](#common-academic-writing-needs) | [Shortening (General)](#shortening-general) |
+| [Rebuttal](#rebuttal) | Nine rules on tone and hierarchy, then [Rebuttal Sources](#rebuttal-sources) |
+| [Graphics](#graphics) | [Core Principles](#core-principles) · [Floating Aids](#floating-aids-tables-figures-graphs) · [Tips](#tips) · [Graph Checklist](#graph-checklist) · [Captions](#captions) |
+| [LaTeX](#latex) | [Citations](#citations) · [Formats and boxes](#conferences-often-dictate-the-format-but-you-can-still-remove-the-ugly-boxes) · [Cross-referencing](#cross-referencing) · [Punctuation in LaTeX](#punctuation-in-latex) · [Shortening (LaTeX)](#shortening-latex) |
+| [Useful Words](#useful-words) | Verbs and connectives by function |
+| [Links and Resources](#links-and-resources) | |
+
 ---
 
 ## Writing

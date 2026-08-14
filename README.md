@@ -36,11 +36,13 @@ Improves your academic writing at any granularity — from a single sentence to 
 <summary><b>Plugin install (recommended)</b></summary>
 <br>
 
-```sh
-claude plugin add --repo borgr/paper-sharpener
-```
+The repository is its own plugin marketplace. Add it once, install from it, and both skills
+are available in every project:
 
-This makes the skills available in all your projects.
+```sh
+claude plugin marketplace add borgr/paper-sharpener
+claude plugin install paper-sharpener@paper-sharpener
+```
 
 </details>
 
@@ -48,13 +50,16 @@ This makes the skills available in all your projects.
 <summary><b>Global install — all projects</b></summary>
 <br>
 
-Clone into your global Claude Code skills directory:
+Claude Code looks for `~/.claude/skills/<skill-name>/SKILL.md`, one level deep, so link the
+individual skill directories rather than cloning the repository over that path:
 
 ```sh
-git clone git@github.com:borgr/paper-sharpener.git ~/.claude/skills/paper-sharpener
+git clone git@github.com:borgr/paper-sharpener.git ~/paper-sharpener
+ln -s ~/paper-sharpener/skills/paper-review ~/.claude/skills/paper-review
+ln -s ~/paper-sharpener/skills/writing-assistant ~/.claude/skills/writing-assistant
 ```
 
-The skills will be available in every project you open with Claude Code.
+Symlinks rather than copies, so `git pull` in the clone updates the installed skills.
 
 </details>
 
@@ -62,11 +67,12 @@ The skills will be available in every project you open with Claude Code.
 <summary><b>Per-project install</b></summary>
 <br>
 
-Clone into a specific paper project's `.claude/` directory:
+Same shape, under a specific paper repo's `.claude/skills/`:
 
 ```sh
 cd your-paper-repo
-git clone git@github.com:borgr/paper-sharpener.git .claude/skills/paper-sharpener
+git clone git@github.com:borgr/paper-sharpener.git /tmp/paper-sharpener
+ln -s /tmp/paper-sharpener/skills/paper-review .claude/skills/paper-review
 ```
 
 The skills will only be available in that project.
@@ -93,7 +99,7 @@ This is an evergrowing project — contributions welcome!
 
 - **Improve an existing skill** — Edit the `SKILL.md` or reference files under `skills/<skill-name>/` and open a PR
 - **Add a new skill** — Create a new directory under `skills/` with a `SKILL.md` file (use the existing skills as a template)
-- **Improve the writing guide** — `references/writing-guide.md` is shared across skills; improvements there benefit everything
+- **Improve the writing guide** — the guide is one file, `skills/paper-review/references/writing-guide.md`; `skills/writing-assistant/references/writing-guide.md` is a symlink to it, so edit either path and both skills see it. If you copy a single skill directory out of the repo, resolve that symlink or the copy will have no guide.
 
 <details>
 <summary><b>💡 Skills we'd love to see</b></summary>
