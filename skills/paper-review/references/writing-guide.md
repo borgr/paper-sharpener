@@ -381,6 +381,8 @@ A summary highlighting the motivation, main findings, and key contributions.
 
 - **Abstract is a paper's promo.** It should make the reader want to read. It should get to the point fast and bring the most interesting aspects with as little unnecessary information as possible.
 - **Abstract is the most read part of a paper after the title.** Make it count. Make sure you put your most important takeaways there.
+- **In essence very much like the introduction.** Roughly the same content in the same order, with three differences: no separate slot for motivation, no citations, and far fewer details. If the abstract and the introduction disagree about the order, one of them is wrong. Carrying no details is also what lets the abstract use intuitive terms it would have to define, cite, or qualify anywhere else -- a licence to be broad, not to be stronger than the evidence.
+- **Start the first sentence with the topic.** Before a reader can judge anything else, they need to know which conversation they are in -- is this Active Learning or Curriculum Learning? Opening on the field at large spends the second-most-read sentence in the paper without placing anyone.
 
 ### Introduction
 
