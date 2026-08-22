@@ -238,31 +238,27 @@ mid-stage draft, no specific concerns, author mode (direct edits), structural en
 
 ### Step 1.4: Consistency pass
 
-Check the paper against itself and against its own citations, before Phase 3 opens.
+Check the paper against itself and against its own citations, before Phase 3 opens. What this
+pass finds are facts about the manuscript rather than suggestions about it: an inverted ratio
+and a mis-attributed venue read as fluent text and survive every other kind of reading.
 
 **Run this concurrently with Phase 2 where you can.** Nothing here depends on the reviews, so
 spawn the reviewer subagents first and check while they work; run it strictly before them only
 when it cannot be parallelised.
-
-What this pass finds are facts about the manuscript, not suggestions about it. An inverted
-ratio and a mis-attributed venue read as fluent text, so no amount of reading for substance or
-for prose will catch them.
-
-Check:
 
 - **Numbers.** Every number in the prose against the table, figure, or equation it comes from.
   Every number repeated in the abstract, introduction, or conclusion against the results
   section it summarizes.
 - **Direction of comparisons.** Does "N times more", "outperforms", "reduces to", "worse
   than" run the way its source runs?
-- **Claims against the evidence cited for them.** Does the sentence that points at Table 3
-  say what Table 3 shows?
-- **Cross-references.** Do references resolve? Do the section, figure, table, and equation
+- **Claims against your own results.** Does the sentence that points at Table 3 say what
+  Table 3 shows?
+- **Labels and pointers.** Do references resolve? Do the section, figure, table, and equation
   numbers named in the text exist? Any `??` or dangling citation in the compiled output?
 - **Citation metadata.** Venue, year, and author list for every citation — a work published
   at a conference is often still cited as the preprint it started as.
-- **Claim attribution.** Does the cited work support the claim attached to it, or a
-  neighbouring claim?
+- **Claim attribution.** Does each cited work support the claim attached to it, or a
+  neighbouring one?
 
 Verify citations against an authoritative source — ACL Anthology, DBLP, OpenReview, the
 publisher's own page — and never from memory. If no lookup is available in this session, do
