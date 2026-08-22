@@ -21,13 +21,14 @@ about finding every real problem and fixing it efficiently.
 
 ## Overview
 
-The process has five phases:
+The process has six phases:
 0. **Memory** — Load (or initialize) the review memory files for this paper
 1. **Read** — Thoroughly read and understand the paper, establish project structure, and
    check the manuscript against itself
 2. **Review** — Generate three independent reviews via parallel subagents
 3. **Triage** — Synthesize action items, surface consensus, and let the user decide what to act on
 4. **Revise** — For each accepted action item, propose a concrete fix, get agreement, then apply the edit
+5. **Re-review** — Spot-check the edits in context, then report whether the pass is done
 
 Each phase is described in detail below. Move through them sequentially. Do not skip ahead.
 
