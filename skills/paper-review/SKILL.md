@@ -215,13 +215,21 @@ Before generating reviews, ask the user:
    Store the editing mode and shorthand in the user-level memory file
    (`.paper-review-memory.local.md`). If a user-level memory file already exists and
    specifies an editing mode and shorthand, use that and skip this question.
+5. **Entry level** — how deep does this pass go: **structural**, **technical**, or
+   **polish**? Default it from the draft stage rather than asking twice: a first draft enters
+   at structural, a resubmission at technical, a camera-ready at polish. The entry level is
+   the floor of the pass, and it is what makes the pass terminable — see *When to stop* in
+   Step 5.3. A first draft that enters at structural does not descend into word choice at
+   all, because the paragraphs it would polish are the ones most likely to be rewritten.
 
-Store the venue and draft stage in the repo-level memory file under a `## Session Context`
-section (overwritten each session — this is ephemeral, not persistent). Pass venue and draft
-stage context to all reviewer subagents so their standards are calibrated.
+Store the venue, draft stage, and entry level in the repo-level memory file under a
+`## Session Context` section (overwritten each session — this is ephemeral, not persistent).
+Pass venue and draft stage context to all reviewer subagents so their standards are calibrated.
+Do not pass the entry level to them: reviewers should report everything they see, and the
+entry level governs what this pass acts on, not what gets noticed.
 
 If the user says "just review it" or doesn't want to answer, default to: top-venue standard,
-mid-stage draft, no specific concerns, author mode (direct edits).
+mid-stage draft, no specific concerns, author mode (direct edits), structural entry level.
 
 ### Step 1.4: Consistency pass
 
@@ -653,6 +661,28 @@ Present a brief report:
 
 This phase should be fast. If the revisions were all Tier 3 surface fixes, the spot check
 is a quick scan. Only Tier 1/2 changes need careful re-reading.
+
+#### When to stop
+
+Structural problems are finite and can be exhausted. Sentence and word suggestions are not:
+any text will yield more of them for as long as anyone keeps looking, so a process with no
+floor stops when the author tires rather than when the text is done. The entry level from
+Step 1.3 is that floor.
+
+End the report with one of three verdicts:
+
+- **Pass complete** — no open item sits at or above the entry level. Say what remains below
+  it and leave it there. Do not drift downward to fill the session.
+- **Another round** — items at or above the entry level are still open or newly surfaced.
+  Say how many and at what level.
+- **Stopped resolving** — a round produced nothing at or above the entry level. End the loop
+  and report it in those words. It means this instrument has stopped separating signal from
+  noise on this draft, not that the paper is finished; the next useful pass is a different
+  kind of reading, or a different reader.
+
+One more signal ends a loop early: **churn**. If two successive rounds edit the same location
+for different reasons, the edits are ping-ponging rather than converging. Stop, and put the
+disagreement to the author as a question about what that passage is for.
 
 ---
 
