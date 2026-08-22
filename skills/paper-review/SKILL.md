@@ -167,6 +167,19 @@ something?"
 This step matters because a misunderstanding of the paper's contribution will cascade into
 bad reviews. Wait for user confirmation before proceeding.
 
+While reading, build a **reverse outline**: one line per paragraph, stating what that
+paragraph does for the argument, in reading order. Then read only that list. It is the
+cheapest way to find what a full read hides — a paragraph with no job, two paragraphs doing
+the same job, a claim promised in the introduction and never delivered, a result that arrives
+before the setup it needs. Do not show the outline to the user unless they ask; use it to
+seed Tier 1 candidates in Phase 3.
+
+Two checks on the same list, both from `references/writing-guide.md`: the introduction should
+contain a pointer to every section, which shows what is skipped and whether the order matches
+(see *Introduction*, the *Full paper summary* bullet), and each paragraph's opening sentence
+alone should carry its point (see *Paragraph Level*). The abstract/introduction/conclusion
+consistency read stays where it is, in Step 5.2.
+
 ### Step 1.3: Pre-review briefing
 
 Before generating reviews, ask the user:
