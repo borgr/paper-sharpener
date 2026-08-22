@@ -178,8 +178,10 @@ While reading, build a **reverse outline**: one line per paragraph, stating what
 paragraph does for the argument, in reading order. Then read only that list. It is the
 cheapest way to find what a full read hides — a paragraph with no job, two paragraphs doing
 the same job, a claim promised in the introduction and never delivered, a result that arrives
-before the setup it needs. Do not show the outline to the user unless they ask; use it to
-seed Tier 1 candidates in Phase 3.
+before the setup it needs. Outline only what this pass covers — the whole paper for a full review, the named sections
+otherwise. Offer it once ("I have a paragraph-by-paragraph outline if you want to see the
+skeleton") and show it on request; authors often find the list more useful than the findings
+drawn from it. Otherwise keep it internal and use it to seed Tier 1 candidates in Phase 3.
 
 Two checks on the same list, both from `references/writing-guide.md`: the introduction should
 contain a pointer to every section, which shows what is skipped and whether the order matches
@@ -222,12 +224,14 @@ Before generating reviews, ask the user:
    Store the editing mode and shorthand in the user-level memory file
    (`.paper-review-memory.local.md`). If a user-level memory file already exists and
    specifies an editing mode and shorthand, use that and skip this question.
-5. **Entry level** — how deep does this pass go: **structural**, **technical**, or
-   **polish**? Default it from the draft stage rather than asking twice: a first draft enters
-   at structural, a resubmission at technical, a camera-ready at polish. The entry level is
-   the floor of the pass, and it is what makes the pass terminable — see *When to stop* in
-   Step 5.3. A first draft that enters at structural does not descend into word choice at
-   all, because the paragraphs it would polish are the ones most likely to be rewritten.
+Do not ask a fifth question for the **entry level** — how deep this pass goes
+(**structural**, **technical**, or **polish**). Infer it from the draft stage: a first draft
+enters at structural, a resubmission at technical, a camera-ready at polish. State it in one
+line so the user can override it — "I'll run this as a structural pass; say the word if you
+want it to go down to sentence level" — and move on. The entry level is the floor of the pass
+and what makes it terminable (see *When to stop* in Step 5.3); a first draft entering at
+structural does not descend into word choice, because the paragraphs it would polish are the
+ones most likely to be rewritten.
 
 Store the venue, draft stage, and entry level in the repo-level memory file under a
 `## Session Context` section (overwritten each session — this is ephemeral, not persistent).
@@ -240,7 +244,13 @@ mid-stage draft, no specific concerns, author mode (direct edits), structural en
 
 ### Step 1.4: Consistency pass
 
-Before any review is generated, check the paper against itself and against its own citations.
+Check the paper against itself and against its own citations, before Phase 3 opens.
+
+**Run this concurrently with Phase 2 where you can.** Nothing in it depends on the reviews, so
+spawn the reviewer subagents first and do this pass while they work. Run it strictly before
+them only when it cannot be parallelised. A user who asked for a review should not wait
+through a citation audit to see the first review, and citation metadata is the slowest and
+least interesting thing this skill produces.
 This is not a matter of opinion and it does not belong to a reviewer persona — it is a
 deterministic pass, and what it finds are facts about the manuscript rather than suggestions
 about it. Reviewers reading for substance and writers reading for prose both miss these,
@@ -560,8 +570,14 @@ For each item (or group), the user decides:
 
 Tier 3 items are not triaged one by one. Present them as a single batch — "N surface
 fixes: typos, formatting, reference formatting" — and apply the batch on one confirmation.
-If an item in that batch turns out to be a judgment call rather than a mechanical fix, it
-is not Tier 3; move it to Tier 2 and queue it.
+Show the list before applying it, not after.
+
+Some things never enter the batch, however mechanical they look: terminology, author and
+system names, mathematical notation, and anything inside a citation. An author's unusual
+spelling of their own term is a convention you have not been told about yet, and a first
+session has no `## Author Conventions` to protect it. Those go to Tier 2 and get their own
+decision. If an item in the batch turns out to be a judgment call rather than a mechanical
+fix, it is not Tier 3 either.
 
 ---
 
@@ -627,6 +643,11 @@ against the text that now exists. Never apply a suggestion that was written agai
 have just replaced. An absorbed item the rewrite already resolved is closed — say so and move
 on rather than re-raising it.
 
+If the leading item is **rejected or deferred**, the absorbed items are not rejected with it.
+Release them back into the queue at their own level and triage them individually against the
+text as it stands. A group is a device for asking about the same span once, not a way to
+discard the small fixes inside it.
+
 After applying, show a brief summary of what changed and move to the next action item.
 
 ### Progress tracking
@@ -679,8 +700,11 @@ Step 1.3 is that floor.
 
 End the report with one of three verdicts:
 
-- **Pass complete** — no open item sits at or above the entry level. Say what remains below
-  it and leave it there. Do not drift downward to fill the session.
+- **Pass complete at this level** — no open item sits at or above the entry level. Name the
+  level in the verdict, never "the paper is in good shape": say how many items remain below it
+  and at which levels, and offer the next pass down as a question. Then stop. Do not drift
+  downward to fill the session, and do not let "complete" stand where "complete for
+  structural work" is what happened.
 - **Another round** — items at or above the entry level are still open or newly surfaced.
   Say how many and at what level.
 - **Stopped resolving** — a round produced nothing at or above the entry level. End the loop

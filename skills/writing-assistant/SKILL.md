@@ -96,6 +96,10 @@ regenerate for as long as anyone keeps looking — so report what is left, name 
 stop. Descending is a new pass the user asks for, not a continuation of this one, because the
 sentences worth polishing are the ones a structural change has stopped threatening.
 
+Always offer that next pass explicitly — "N sentence-level issues are still open; want a
+focused pass over them?" A floor the user does not know about is indistinguishable from a
+skill that missed things.
+
 ### Step 1: Determine Editing Mode
 
 Ask the user: "Are you the paper's author, or a collaborator?"
