@@ -88,8 +88,7 @@ This way, if a session is interrupted, nothing is lost.
 - **When a deferred item is later accepted or rejected:** Move it from `## Deferred Items`
   to the appropriate section.
 - **When an accepted item has been applied:** Add one line under `## Applied Items` with the
-  label and date. Without it, a later session re-raises a fix that is already in the paper,
-  and the author has to re-argue a decision they already made.
+  label and date, so a later session does not re-raise it.
 
 **User-level memory (`.paper-review-memory.local.md`):**
 - **When the user states a personal preference:** editing mode, shorthand, tone, interaction
@@ -174,20 +173,17 @@ something?"
 This step matters because a misunderstanding of the paper's contribution will cascade into
 bad reviews. Wait for user confirmation before proceeding.
 
-While reading, build a **reverse outline**: one line per paragraph, stating what that
-paragraph does for the argument, in reading order. Then read only that list. It is the
-cheapest way to find what a full read hides — a paragraph with no job, two paragraphs doing
+While reading, build a **reverse outline** of whatever this pass covers: one line per
+paragraph, stating what that paragraph does for the argument, in reading order. Then read only
+that list. It exposes what a full read hides — a paragraph with no job, two paragraphs doing
 the same job, a claim promised in the introduction and never delivered, a result that arrives
-before the setup it needs. Outline only what this pass covers — the whole paper for a full review, the named sections
-otherwise. Offer it once ("I have a paragraph-by-paragraph outline if you want to see the
-skeleton") and show it on request; authors often find the list more useful than the findings
-drawn from it. Otherwise keep it internal and use it to seed Tier 1 candidates in Phase 3.
+before the setup it needs. Offer the outline once and show it on request; otherwise keep it
+internal and use it to seed Tier 1 candidates in Phase 3.
 
-Two checks on the same list, both from `references/writing-guide.md`: the introduction should
+Two checks run on that list, both from `references/writing-guide.md`: the introduction should
 contain a pointer to every section, which shows what is skipped and whether the order matches
 (see *Introduction*, the *Full paper summary* bullet), and each paragraph's opening sentence
-alone should carry its point (see *Paragraph Level*). The abstract/introduction/conclusion
-consistency read stays where it is, in Step 5.2.
+alone should carry its point (see *Paragraph Level*).
 
 ### Step 1.3: Pre-review briefing
 
@@ -224,20 +220,18 @@ Before generating reviews, ask the user:
    Store the editing mode and shorthand in the user-level memory file
    (`.paper-review-memory.local.md`). If a user-level memory file already exists and
    specifies an editing mode and shorthand, use that and skip this question.
-Do not ask a fifth question for the **entry level** — how deep this pass goes
-(**structural**, **technical**, or **polish**). Infer it from the draft stage: a first draft
-enters at structural, a resubmission at technical, a camera-ready at polish. State it in one
-line so the user can override it — "I'll run this as a structural pass; say the word if you
-want it to go down to sentence level" — and move on. The entry level is the floor of the pass
-and what makes it terminable (see *When to stop* in Step 5.3); a first draft entering at
-structural does not descend into word choice, because the paragraphs it would polish are the
-ones most likely to be rewritten.
+One more setting, inferred rather than asked: the **entry level** — how deep this pass goes
+(**structural**, **technical**, or **polish**). A first draft enters at structural, a
+resubmission at technical, a camera-ready at polish. State it in one line the user can
+override — "I'll run this as a structural pass; say the word if you want it to go down to
+sentence level" — and move on. The entry level is the floor of the pass; it is what lets the
+pass end (see *When to stop* in Step 5.3).
 
 Store the venue, draft stage, and entry level in the repo-level memory file under a
 `## Session Context` section (overwritten each session — this is ephemeral, not persistent).
 Pass venue and draft stage context to all reviewer subagents so their standards are calibrated.
-Do not pass the entry level to them: reviewers should report everything they see, and the
-entry level governs what this pass acts on, not what gets noticed.
+Do not pass the entry level to them — it governs what this pass acts on, not what gets
+noticed.
 
 If the user says "just review it" or doesn't want to answer, default to: top-venue standard,
 mid-stage draft, no specific concerns, author mode (direct edits), structural entry level.
@@ -246,15 +240,13 @@ mid-stage draft, no specific concerns, author mode (direct edits), structural en
 
 Check the paper against itself and against its own citations, before Phase 3 opens.
 
-**Run this concurrently with Phase 2 where you can.** Nothing in it depends on the reviews, so
-spawn the reviewer subagents first and do this pass while they work. Run it strictly before
-them only when it cannot be parallelised. A user who asked for a review should not wait
-through a citation audit to see the first review, and citation metadata is the slowest and
-least interesting thing this skill produces.
-This is not a matter of opinion and it does not belong to a reviewer persona — it is a
-deterministic pass, and what it finds are facts about the manuscript rather than suggestions
-about it. Reviewers reading for substance and writers reading for prose both miss these,
-because an inverted ratio and a mis-attributed venue read as perfectly fluent text.
+**Run this concurrently with Phase 2 where you can.** Nothing here depends on the reviews, so
+spawn the reviewer subagents first and check while they work; run it strictly before them only
+when it cannot be parallelised.
+
+What this pass finds are facts about the manuscript, not suggestions about it. An inverted
+ratio and a mis-attributed venue read as fluent text, so no amount of reading for substance or
+for prose will catch them.
 
 Check:
 
@@ -262,15 +254,13 @@ Check:
   Every number repeated in the abstract, introduction, or conclusion against the results
   section it summarizes.
 - **Direction of comparisons.** Does "N times more", "outperforms", "reduces to", "worse
-  than" run the way its source runs? Reversed comparisons are the single easiest error to
-  read past.
+  than" run the way its source runs?
 - **Claims against the evidence cited for them.** Does the sentence that points at Table 3
   say what Table 3 shows?
 - **Cross-references.** Do references resolve? Do the section, figure, table, and equation
   numbers named in the text exist? Any `??` or dangling citation in the compiled output?
-- **Citation metadata.** Venue, year, and author list for every citation. A paper that
-  appeared at a conference but is cited as a preprint is a correctable error; citing a venue
-  the work never appeared in is a worse one.
+- **Citation metadata.** Venue, year, and author list for every citation — a work published
+  at a conference is often still cited as the preprint it started as.
 - **Claim attribution.** Does the cited work support the claim attached to it, or a
   neighbouring claim?
 
@@ -522,9 +512,7 @@ the group to whichever tier its highest-leverage item belongs to.
 Items that land on the same span of text are also a group, even when they have nothing to do
 with each other in substance. The highest-level item leads: a Tier 1 rewrite of a paragraph
 decides the fate of every lower-level item inside that paragraph. Present the group as one
-unit named by its leading item, and say which lower-level items it absorbs, so the user is
-not asked to rule on the wording of a sentence that may not survive the decision they are
-about to make.
+unit named by its leading item, and say which lower-level items it absorbs.
 
 #### Tier definitions
 
@@ -552,14 +540,13 @@ uses inconsistent notation with Equation 2", "Figure 3 is unreadable at print si
 Typos, grammar, formatting, minor reference issues. These are quick, local, and low-risk.
 Do not give them a place in the ordered queue. Apply them as a batch sweep: once before the
 queue, for the free wins, and again after the last structural change, because rewrites
-introduce fresh typos. Polishing a sentence that a later Tier 1 rewrite deletes is wasted
-work; the professions that revise for a living all put the surface stage after the structure
-is settled, or automate it away, for exactly that reason.
+introduce fresh typos. A sentence polished before a Tier 1 rewrite deletes it is work done
+twice.
 
 ### Step 3.4: Interactive triage
 
-Settle Tier 0 before the queue opens — those are questions of fact, and every later decision
-is made against the corrected numbers. Then work through the queued items one by one,
+Settle Tier 0 before the queue opens, so every later decision is made against the corrected
+numbers. Then work through the queued items one by one,
 starting with Tier 1 (structural), then Tier 2 (technical). Tier 3 is not queued — see its
 tier definition. Cross-cutting groups and location groups are presented as single units.
 
@@ -573,11 +560,10 @@ fixes: typos, formatting, reference formatting" — and apply the batch on one c
 Show the list before applying it, not after.
 
 Some things never enter the batch, however mechanical they look: terminology, author and
-system names, mathematical notation, and anything inside a citation. An author's unusual
-spelling of their own term is a convention you have not been told about yet, and a first
-session has no `## Author Conventions` to protect it. Those go to Tier 2 and get their own
-decision. If an item in the batch turns out to be a judgment call rather than a mechanical
-fix, it is not Tier 3 either.
+system names, mathematical notation, and anything inside a citation. An unusual spelling may
+be a convention nobody has recorded yet, and a first session has no `## Author Conventions` to
+protect it. Those go to Tier 2 for their own decision, as does anything in the batch that
+turns out to be a judgment call.
 
 ---
 
@@ -645,8 +631,7 @@ on rather than re-raising it.
 
 If the leading item is **rejected or deferred**, the absorbed items are not rejected with it.
 Release them back into the queue at their own level and triage them individually against the
-text as it stands. A group is a device for asking about the same span once, not a way to
-discard the small fixes inside it.
+text as it stands.
 
 After applying, show a brief summary of what changed and move to the next action item.
 
@@ -693,24 +678,22 @@ is a quick scan. Only Tier 1/2 changes need careful re-reading.
 
 #### When to stop
 
-Structural problems are finite and can be exhausted. Sentence and word suggestions are not:
-any text will yield more of them for as long as anyone keeps looking, so a process with no
-floor stops when the author tires rather than when the text is done. The entry level from
-Step 1.3 is that floor.
+Structural problems can be exhausted; sentence and word suggestions cannot, since any text
+yields more of them for as long as anyone keeps looking. The entry level from Step 1.3 is the
+floor that lets the pass end on the text rather than on the author's patience.
 
 End the report with one of three verdicts:
 
 - **Pass complete at this level** — no open item sits at or above the entry level. Name the
-  level in the verdict, never "the paper is in good shape": say how many items remain below it
-  and at which levels, and offer the next pass down as a question. Then stop. Do not drift
-  downward to fill the session, and do not let "complete" stand where "complete for
-  structural work" is what happened.
+  level; never report it as "the paper is in good shape". Say how many items remain below it
+  and at which levels, offer the next pass down as a question, and stop there rather than
+  drifting downward to fill the session.
 - **Another round** — items at or above the entry level are still open or newly surfaced.
   Say how many and at what level.
 - **Stopped resolving** — a round produced nothing at or above the entry level. End the loop
-  and report it in those words. It means this instrument has stopped separating signal from
-  noise on this draft, not that the paper is finished; the next useful pass is a different
-  kind of reading, or a different reader.
+  and report it in those words: this process has stopped finding things on this draft, which
+  is not the same as the paper being finished. What it needs next is a different kind of
+  reading, or a different reader.
 
 One more signal ends a loop early: **churn**. If two successive rounds edit the same location
 for different reasons, the edits are ping-ponging rather than converging. Stop, and put the
@@ -728,9 +711,8 @@ disagreement to the author as a question about what that passage is for.
   existing style, tone, and level of formality. Don't impose a different writing voice.
 - **Never introduce a citation the author hasn't cited.** Only reference works already in the
   paper. Hallucinated or unfamiliar references erode trust and waste verification time. This
-  is a rule about adding references, not about leaving them unchecked: the citations already
-  present get their metadata and their claim attribution verified in Step 1.4, against an
-  authoritative source rather than from memory.
+  forbids adding references, not checking them — the ones already present get verified in
+  Step 1.4.
 - **Productive over performative.** Don't waste time on review theater. Every comment should
   lead to either a concrete fix or a conscious decision not to fix. If a review comment
   wouldn't change anything about the paper, it shouldn't be there.

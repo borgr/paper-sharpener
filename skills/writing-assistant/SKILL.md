@@ -89,16 +89,12 @@ Before doing anything else, assess the scope of the request:
 Match your effort to the request. A user who pastes one sentence does not want a 5-level
 analysis.
 
-The scope also decides when the pass is over. The level a pass opens at is also its floor:
-a full pass ends when no story- or section-level issue is left open, a focused pass when no
+The scope also decides when the pass is over: the level a pass opens at is also its floor. A
+full pass ends when no story- or section-level issue is left open, a focused pass when no
 paragraph-level issue is. Lower-level suggestions almost always remain — word-level ones
 regenerate for as long as anyone keeps looking — so report what is left, name its level, and
-stop. Descending is a new pass the user asks for, not a continuation of this one, because the
-sentences worth polishing are the ones a structural change has stopped threatening.
-
-Always offer that next pass explicitly — "N sentence-level issues are still open; want a
-focused pass over them?" A floor the user does not know about is indistinguishable from a
-skill that missed things.
+offer the next pass down explicitly: "N sentence-level issues are still open; want a focused
+pass over them?" Descending is a pass the user asks for, not a continuation of this one.
 
 ### Step 1: Determine Editing Mode
 
@@ -170,10 +166,9 @@ Skip levels that have no issues.
 
 After presenting the analysis, work through each suggestion one by one with the user.
 Present them grouped by level (high to low). Within a level, order by what the fix changes
-for the reader — the guide's first principle is that the value of a text is what it changes
-for whoever reads it, and that applies to the order of fixes as much as to the fixes. Fall
-back to order of appearance at sentence and word level, where the suggestions are small and
-alike enough that position is the only useful sort.
+for the reader (the guide's *Story Level* opening: the value of a text is what it changes for
+whoever reads it). Fall back to order of appearance at sentence and word level, where the
+suggestions are alike enough that position is the only useful sort.
 
 For each suggestion, present:
 
