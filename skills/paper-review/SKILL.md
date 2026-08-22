@@ -486,7 +486,8 @@ Items rejected here move to `## Rejected Items` in the repo-level memory file.
 
 ### Step 3.3: Compile action items
 
-Organize all actionable feedback into three tiers. Each action item gets:
+Organize all actionable feedback into tiers, plus whatever Step 1.4's consistency pass
+found. Each action item gets:
 - A short label
 - Which reviewer(s) raised it (and whether it's unanimous)
 - The specific section/location it applies to, **including a `file_path:line_number` reference**
@@ -524,6 +525,18 @@ conflicting values and ask which is correct, then fix. If the author says the ma
 right and the check was wrong, record that under `## Author Conventions` so it is not raised
 again.
 
+**Tier 1 — Structural (highest leverage, do first)**
+These affect the paper's narrative, framing, contribution claims, experimental design,
+or missing content. Examples: "The related work section misses an entire line of work",
+"The main claim in Section 3 is not supported by the experiments in Section 5",
+"Missing ablation study for component X".
+
+**Tier 2 — Technical (medium leverage)**
+These affect methodology clarity, formalization, notation, figure quality, or
+presentation of results without changing the paper's core story. Examples: "Equation 4
+uses inconsistent notation with Equation 2", "Figure 3 is unreadable at print size",
+"The algorithm description in Section 4.2 is ambiguous about step 3".
+
 **Tier 3 — Surface (a sweep, not a queue position)**
 Typos, grammar, formatting, minor reference issues. These are quick, local, and low-risk.
 Do not give them a place in the ordered queue. Apply them as a batch sweep: once before the
@@ -532,24 +545,12 @@ introduce fresh typos. Polishing a sentence that a later Tier 1 rewrite deletes 
 work; the professions that revise for a living all put the surface stage after the structure
 is settled, or automate it away, for exactly that reason.
 
-**Tier 2 — Technical (medium leverage)**
-These affect methodology clarity, formalization, notation, figure quality, or
-presentation of results without changing the paper's core story. Examples: "Equation 4
-uses inconsistent notation with Equation 2", "Figure 3 is unreadable at print size",
-"The algorithm description in Section 4.2 is ambiguous about step 3".
-
-**Tier 1 — Structural (highest leverage, do first)**
-These affect the paper's narrative, framing, contribution claims, experimental design,
-or missing content. Examples: "The related work section misses an entire line of work",
-"The main claim in Section 3 is not supported by the experiments in Section 5",
-"Missing ablation study for component X".
-
 ### Step 3.4: Interactive triage
 
 Settle Tier 0 before the queue opens — those are questions of fact, and every later decision
 is made against the corrected numbers. Then work through the queued items one by one,
-starting with Tier 1 (structural), then Tier 2 (technical). Tier 3 is not queued — see its tier definition. Cross-cutting groups and
-location groups are presented as single units.
+starting with Tier 1 (structural), then Tier 2 (technical). Tier 3 is not queued — see its
+tier definition. Cross-cutting groups and location groups are presented as single units.
 
 For each item (or group), the user decides:
 - **Accept** — We will address this
