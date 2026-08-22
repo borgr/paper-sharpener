@@ -444,6 +444,15 @@ together." A group is presented as a single unit during triage (one accept/rejec
 decision for the whole group) and handled as a single coordinated edit in Phase 4. Assign
 the group to whichever tier its highest-leverage item belongs to.
 
+#### Location groups
+
+Items that land on the same span of text are also a group, even when they have nothing to do
+with each other in substance. The highest-level item leads: a Tier 1 rewrite of a paragraph
+decides the fate of every lower-level item inside that paragraph. Present the group as one
+unit named by its leading item, and say which lower-level items it absorbs, so the user is
+not asked to rule on the wording of a sentence that may not survive the decision they are
+about to make.
+
 #### Tier definitions
 
 **Tier 3 — Surface (a sweep, not a queue position)**
@@ -540,6 +549,11 @@ Always respect the author's existing voice and tone.
 For **grouped cross-cutting items**, apply all related changes in sequence within this single
 step, making sure they're consistent with each other. Show a brief summary of all changes made
 in the group before moving on.
+
+For **location groups**, apply the leading item first, then re-derive each absorbed item
+against the text that now exists. Never apply a suggestion that was written against text you
+have just replaced. An absorbed item the rewrite already resolved is closed — say so and move
+on rather than re-raising it.
 
 After applying, show a brief summary of what changed and move to the next action item.
 
