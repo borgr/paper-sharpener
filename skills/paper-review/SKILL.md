@@ -86,6 +86,9 @@ This way, if a session is interrupted, nothing is lost.
   `## Standing Instructions`.
 - **When a deferred item is later accepted or rejected:** Move it from `## Deferred Items`
   to the appropriate section.
+- **When an accepted item has been applied:** Add one line under `## Applied Items` with the
+  label and date. Without it, a later session re-raises a fix that is already in the paper,
+  and the author has to re-argue a decision they already made.
 
 **User-level memory (`.paper-review-memory.local.md`):**
 - **When the user states a personal preference:** editing mode, shorthand, tone, interaction
@@ -114,6 +117,9 @@ This way, if a session is interrupted, nothing is lost.
 
 ## Deferred Items
 <!-- Items postponed for a future session -->
+
+## Applied Items
+<!-- Fixes already made, so a later session does not re-raise them -->
 ```
 
 **User-level (`.paper-review-memory.local.md`):**
