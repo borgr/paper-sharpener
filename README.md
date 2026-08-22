@@ -18,7 +18,7 @@ Clone your Overleaf project locally via [git](https://www.overleaf.com/learn/how
 
 ### 📝 Paper Review
 
-Simulates a full multi-reviewer academic paper review. Three independent reviewers — senior adjacent-area, mid-career same-subfield, and early-career same-subfield — generate reviews in parallel. You then triage action items and apply revisions interactively.
+Simulates a full multi-reviewer academic paper review. The paper is first checked against itself — numbers against their tables, comparisons for direction, citations for venue — then three independent reviewers, senior adjacent-area, mid-career same-subfield, and early-career same-subfield, generate reviews in parallel. You triage action items structural-first and apply revisions interactively, and the pass ends at a level you set rather than when you get tired.
 
 > **Try:** *"review my paper"* · *"simulate reviewers"* · *"what would reviewers say"* · *"help me prepare for submission"*
 
@@ -87,7 +87,7 @@ The skills are just Markdown files — you can tweak them by talking to Claude C
 
 - *"add a reviewer persona focused on statistical rigor"*
 - *"make the writing assistant ignore passive voice"*
-- *"change the review triage to start with structural issues first"*
+- *"let this pass go down to word level, not just structural"*
 
 Each paper repo also gets its own memory automatically. The skills remember your decisions (rejected review items, conventions, editing preferences) across sessions, stored in your paper's `.claude/` directory.
 
