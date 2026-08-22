@@ -23,7 +23,8 @@ about finding every real problem and fixing it efficiently.
 
 The process has five phases:
 0. **Memory** — Load (or initialize) the review memory files for this paper
-1. **Read** — Thoroughly read and understand the paper, establish project structure
+1. **Read** — Thoroughly read and understand the paper, establish project structure, and
+   check the manuscript against itself
 2. **Review** — Generate three independent reviews via parallel subagents
 3. **Triage** — Synthesize action items, surface consensus, and let the user decide what to act on
 4. **Revise** — For each accepted action item, propose a concrete fix, get agreement, then apply the edit
@@ -208,6 +209,39 @@ stage context to all reviewer subagents so their standards are calibrated.
 
 If the user says "just review it" or doesn't want to answer, default to: top-venue standard,
 mid-stage draft, no specific concerns, author mode (direct edits).
+
+### Step 1.4: Consistency pass
+
+Before any review is generated, check the paper against itself and against its own citations.
+This is not a matter of opinion and it does not belong to a reviewer persona — it is a
+deterministic pass, and what it finds are facts about the manuscript rather than suggestions
+about it. Reviewers reading for substance and writers reading for prose both miss these,
+because an inverted ratio and a mis-attributed venue read as perfectly fluent text.
+
+Check:
+
+- **Numbers.** Every number in the prose against the table, figure, or equation it comes from.
+  Every number repeated in the abstract, introduction, or conclusion against the results
+  section it summarizes.
+- **Direction of comparisons.** Does "N times more", "outperforms", "reduces to", "worse
+  than" run the way its source runs? Reversed comparisons are the single easiest error to
+  read past.
+- **Claims against the evidence cited for them.** Does the sentence that points at Table 3
+  say what Table 3 shows?
+- **Cross-references.** Do references resolve? Do the section, figure, table, and equation
+  numbers named in the text exist? Any `??` or dangling citation in the compiled output?
+- **Citation metadata.** Venue, year, and author list for every citation. A paper that
+  appeared at a conference but is cited as a preprint is a correctable error; citing a venue
+  the work never appeared in is a worse one.
+- **Claim attribution.** Does the cited work support the claim attached to it, or a
+  neighbouring claim?
+
+Verify citations against an authoritative source — ACL Anthology, DBLP, OpenReview, the
+publisher's own page — and never from memory. If no lookup is available in this session, do
+not guess: list the citations that need checking and hand the list to the user.
+
+Report what you find and do not triage it. These findings enter Phase 3 as **Tier 0**
+(Step 3.3): the author's only question is which side is right, not whether to fix it.
 
 ---
 
@@ -455,6 +489,14 @@ about to make.
 
 #### Tier definitions
 
+**Tier 0 — Factual (from Step 1.4, not triaged)**
+What the consistency pass found: a number that disagrees with its table, an inverted
+comparison, an unresolved reference, a citation with the wrong venue. These are not
+suggestions and do not get an accept/reject/defer decision. Present each with both
+conflicting values and ask which is correct, then fix. If the author says the manuscript is
+right and the check was wrong, record that under `## Author Conventions` so it is not raised
+again.
+
 **Tier 3 — Surface (a sweep, not a queue position)**
 Typos, grammar, formatting, minor reference issues. These are quick, local, and low-risk.
 Do not give them a place in the ordered queue. Apply them as a batch sweep: once before the
@@ -477,8 +519,9 @@ or missing content. Examples: "The related work section misses an entire line of
 
 ### Step 3.4: Interactive triage
 
-Work through the queued items one by one, starting with Tier 1 (structural), then Tier 2
-(technical). Tier 3 is not queued — see its tier definition. Cross-cutting groups and
+Settle Tier 0 before the queue opens — those are questions of fact, and every later decision
+is made against the corrected numbers. Then work through the queued items one by one,
+starting with Tier 1 (structural), then Tier 2 (technical). Tier 3 is not queued — see its tier definition. Cross-cutting groups and
 location groups are presented as single units.
 
 For each item (or group), the user decides:
@@ -608,8 +651,11 @@ is a quick scan. Only Tier 1/2 changes need careful re-reading.
   table, equation, or paragraph number. Vague feedback wastes time during the revision phase.
 - **Respect the author's voice.** When writing replacement text in Phase 4, match the paper's
   existing style, tone, and level of formality. Don't impose a different writing voice.
-- **Never suggest citations not already in the paper.** Only reference works the author has
-  already cited. Hallucinated or unfamiliar references erode trust and waste verification time.
+- **Never introduce a citation the author hasn't cited.** Only reference works already in the
+  paper. Hallucinated or unfamiliar references erode trust and waste verification time. This
+  is a rule about adding references, not about leaving them unchecked: the citations already
+  present get their metadata and their claim attribution verified in Step 1.4, against an
+  authoritative source rather than from memory.
 - **Productive over performative.** Don't waste time on review theater. Every comment should
   lead to either a concrete fix or a conscious decision not to fix. If a review comment
   wouldn't change anything about the paper, it shouldn't be there.

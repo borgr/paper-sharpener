@@ -220,5 +220,7 @@ When crafting replacement text:
   user should be able to accept/reject each independently.
 - **Preserve meaning.** Never change what the author is saying, only how they say it.
   If a rewrite risks changing meaning, flag it explicitly.
-- **Never suggest citations not already in the paper.** Only reference works the author
-  has already cited.
+- **Never introduce a citation the author hasn't cited.** Only reference works already in
+  the paper. This is a rule about adding references, not about leaving them unchecked — if a
+  rewrite touches a sentence whose citation looks mis-attributed, say so rather than
+  reproducing it.
