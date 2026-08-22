@@ -446,8 +446,13 @@ the group to whichever tier its highest-leverage item belongs to.
 
 #### Tier definitions
 
-**Tier 3 — Surface (no-brainers, do first)**
-Typos, grammar, formatting, minor reference issues. These are quick and low-risk.
+**Tier 3 — Surface (a sweep, not a queue position)**
+Typos, grammar, formatting, minor reference issues. These are quick, local, and low-risk.
+Do not give them a place in the ordered queue. Apply them as a batch sweep: once before the
+queue, for the free wins, and again after the last structural change, because rewrites
+introduce fresh typos. Polishing a sentence that a later Tier 1 rewrite deletes is wasted
+work; the professions that revise for a living all put the surface stage after the structure
+is settled, or automate it away, for exactly that reason.
 
 **Tier 2 — Technical (medium leverage)**
 These affect methodology clarity, formalization, notation, figure quality, or
@@ -455,7 +460,7 @@ presentation of results without changing the paper's core story. Examples: "Equa
 uses inconsistent notation with Equation 2", "Figure 3 is unreadable at print size",
 "The algorithm description in Section 4.2 is ambiguous about step 3".
 
-**Tier 1 — Structural (highest leverage, do last)**
+**Tier 1 — Structural (highest leverage, do first)**
 These affect the paper's narrative, framing, contribution claims, experimental design,
 or missing content. Examples: "The related work section misses an entire line of work",
 "The main claim in Section 3 is not supported by the experiments in Section 5",
@@ -463,24 +468,27 @@ or missing content. Examples: "The related work section misses an entire line of
 
 ### Step 3.4: Interactive triage
 
-Work through all items one by one, starting with Tier 3 (surface), then Tier 2
-(technical), then Tier 1 (structural). Cross-cutting groups are presented as single units.
+Work through the queued items one by one, starting with Tier 1 (structural), then Tier 2
+(technical). Tier 3 is not queued — see its tier definition. Cross-cutting groups and
+location groups are presented as single units.
 
 For each item (or group), the user decides:
 - **Accept** — We will address this
 - **Reject** — Skip
 - **Defer** — Come back to it later
 
-Tier 3 items are still triaged individually, but the expectation is that most will be
-quick accepts. If the user is clearly accepting all of them, you can ask: "Want me to
-just accept the rest of the surface items?" But don't assume — let them drive.
+Tier 3 items are not triaged one by one. Present them as a single batch — "N surface
+fixes: typos, formatting, reference formatting" — and apply the batch on one confirmation.
+If an item in that batch turns out to be a judgment call rather than a mechanical fix, it
+is not Tier 3; move it to Tier 2 and queue it.
 
 ---
 
 ## Phase 4: Revise
 
-Work through all accepted action items in tier order (Tier 3 first, then Tier 2, then
-Tier 1).
+Work through all accepted action items in queue order: Tier 1 first, then Tier 2. Run the
+Tier 3 surface sweep once before starting the queue and once more after the last structural
+change lands.
 
 ### Step 4.1: Propose the fix
 
