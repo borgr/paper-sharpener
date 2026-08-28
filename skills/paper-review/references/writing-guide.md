@@ -10,8 +10,8 @@ This guide splits tips into several categories:
 
 It focuses on scientific and domain-specific papers (not Nature or Science), but much of it may be useful for other purposes.
 
-Each entry states the defect, how to spot it, and the repair. Motivation, anecdote and who said it
-first belong in the sources, so an entry grown past those three parts should be trimmed back.
+Each entry gives the defect, how to spot it, and the repair. Motivation and anecdote belong in the
+sources, so trim an entry that has grown past those three parts.
 
 ## Contents
 
@@ -106,8 +106,8 @@ In most venues, every claim should be supported. Refrain from claiming what you 
 #### Explain, don't acknowledge
 
 Naming a difficulty is not the same as handling it. "The comparison is admittedly imperfect" says
-you saw the problem and walked past it, which costs more than silence would. Either explain why the
-conclusion still stands, or move it to Limitations.
+you saw the problem and walked past it. Either explain why the conclusion still stands, or move it
+to Limitations.
 
 Space is emphasis, so match it to importance. Three sentences on a minor caveat make it a major one.
 
@@ -211,8 +211,8 @@ In strong sentences, the subject is not just present but actively performing a c
 
 Flag *not X*, *rather than*, and *instead of* framings. "The effect is not driven by frequency"
 leaves the reader without the cause. "The effect follows from length" states it and drops the
-negation. A negation is right only when the reader already expects the positive and needs it
-removed.
+negation. A negation is right when the reader already expects the positive and needs it removed,
+which is the *not X, but Y* stress device below.
 
 #### When there is parallelism in meaning, make it also parallel in form
 
@@ -272,14 +272,14 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 
 #### Asides go into the sentence or out of the paper
 
-Parentheses, footnotes, and em-dash asides all tell the reader the material was not worth a
-sentence. Test whether removing it changes the claim. When it does not, cut it. When it does,
-promote it into the sentence, where it has to earn its place, or into an appendix.
+Parentheses and footnotes tell the reader the material was not worth a sentence. Test whether
+removing it changes the claim. When it does not, cut it. When it does, promote it into the
+sentence, where it has to earn its place, or into an appendix.
 
 #### Reduce the reader's mental load
 
 - **Shorten the distance between connected concepts.** Many concepts in a sentence are connected (nouns to verbs, verbs to objects, adjectives to nouns, adverbs to verbs). Reducing the distance between related concepts, or the tree depth, makes it easier to follow. The defect is the distance, not the length: a long sentence whose subject and verb sit together reads easily, so close the gap before you start cutting.
-- **Ration the numbers.** A reader carries about one number out of a paragraph. When three compete, keep the one the argument turns on and move the rest to a table.
+- **Ration the numbers.** When a paragraph carries three or more numbers, keep the one the argument turns on and move the rest to a table.
 - **Reduce ambiguities.** When there is more than one meaning, the reader needs to solve it by context. Coreferences and anaphors like "it," "this," and "those" may refer to many entities. Use them, but sparsely.
 
 ---
@@ -331,10 +331,9 @@ Examples: very, really, quite, extremely.
 Authors commonly repeat their word arsenal a lot. If you know you overuse "so" or "Indeed" or "still" or "in fact," consider changing or deleting those uses.
 
 Sentence shapes repeat the same way and are harder to spot than words. Count them once a section
-is finished, since the pattern is invisible while drafting. Four worth counting:
+is finished. Three worth counting:
 
 - *X is Y, and Z*, the two-clause statement
-- *A rather than B*, the counter
 - the *and* whose second clause is the conclusion of the first, standing in for *so*
 - a question word where a statement belongs, "what the model knows" or "how far it reaches"
 
@@ -682,8 +681,7 @@ Check your target venue's requirements and maintain consistency across all graph
 ### Citations
 
 - **`\citep`** -- default citation. Use when attributing but the author name should not be part of the sentence. E.g., `This tips document was later shown to be the best in the world \citep{Einst1991}.`
-- **`\citet`** -- use when referring to a paper directly. E.g., `\citet{Choshen} showed that` produces "Choshen (2053) showed that."
-- **Naming a source costs attention, so spend it.** Use `\citet` when the name carries weight or when the sentence is about that work's claim. Otherwise `\citep` assigns the credit without asking the reader to hold a surname.
+- **`\citet`** -- use when referring to a paper directly. E.g., `\citet{Choshen} showed that` produces "Choshen (2053) showed that." Reserve it for a name that carries weight or a sentence about that work's claim, since it asks the reader to hold a surname. Otherwise `\citep`.
 - **`\cite` warning:** It is defined differently depending on the style used. Sometimes it acts as `\citet` and sometimes `\citep`. This means, for example, that being rejected from ICML and submitting to ICLR would have changed all citations.
 
 ### Conferences often dictate the format, but you can still remove the ugly boxes
@@ -762,7 +760,6 @@ Check your target venue's requirements and maintain consistency across all graph
 
 ## Links and Resources
 
-- [100 Ways to Improve Your Writing -- Gary Provost](https://www.google.com/search?q=100+Ways+to+Improve+Your+Writing+Gary+Provost) -- 158 pages of one-page craft rules, source of the sentence-length passage
 - [Style: Ten Lessons in Clarity and Grace](https://www.google.com/search?q=Style+Ten+Lessons+in+Clarity+and+Grace) -- The unparalleled book for writing
 - [The Craft of Writing Effectively -- Larry McEnerney](https://www.youtube.com/watch?v=vtIzMaLkCaM) -- Why value precedes clarity, and how readers' codes of value work
 - [The Science of Scientific Writing -- Gopen & Swan](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing) -- Topic and stress positions, subject--verb distance
