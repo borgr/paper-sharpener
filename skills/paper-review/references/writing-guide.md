@@ -146,6 +146,10 @@ This allows skimming and ensures the important messages are salient. Starting wi
 - "There are many ways to open a can efficiently." [list of ways]
 - "Solving the superintelligence problem is more complex than one thinks." [complexities, perhaps with references to misconceptions]
 
+**Find the opening by cutting.** Provost's test is to cross out every sentence until you reach
+one you cannot do without. That sentence is the opening. It catches the paragraph that spends two
+sentences arriving, which rewording never fixes.
+
 #### Use of Examples
 
 Use examples -- people understand those better than complicated abstractions. Some even suggest starting with the examples before explaining; often speech would do that (and would ease understanding).
@@ -251,6 +255,7 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 #### Reduce the reader's mental load
 
 - **Shorten the distance between connected concepts.** Many concepts in a sentence are connected (nouns to verbs, verbs to objects, adjectives to nouns, adverbs to verbs). Reducing the distance between related concepts, or the tree depth, makes it easier to follow. The defect is the distance, not the length: a long sentence whose subject and verb sit together reads easily, so close the gap before you start cutting.
+- **Ration the numbers.** A reader carries about one number out of a paragraph. Provost's version is that "statistics should be sprinkled like pepper, not smeared like butter." When three numbers compete, keep the one the argument turns on and move the rest to a table.
 - **Reduce ambiguities.** When there is more than one meaning, the reader needs to solve it by context. Coreferences and anaphors like "it," "this," and "those" may refer to many entities. Use them, but sparsely.
 
 ---
@@ -300,6 +305,14 @@ Examples: very, really, quite, extremely.
 #### Know yourselves
 
 Authors commonly repeat their word arsenal a lot. If you know you overuse "so" or "Indeed" or "still" or "in fact," consider changing or deleting those uses.
+
+Sentence shapes repeat the same way, and they are harder to notice than words. A two-clause
+statement of the form *X is Y, and Z* stacks up invisibly, as does the *A rather than B* counter,
+which reads as precision the first time and as a habit the third. Watch the *and* whose second
+clause is the conclusion of the first rather than its equal, standing in for *so* or a colon.
+It appends a claim without naming the relation. Question words standing in for a statement,
+"what the model knows" or "how far it reaches," are fine in moderation and wearing in bulk.
+Count the shapes once a section is finished, since the pattern is invisible while drafting.
 
 ---
 
@@ -718,6 +731,7 @@ Check your target venue's requirements and maintain consistency across all graph
 
 ## Links and Resources
 
+- [100 Ways to Improve Your Writing -- Gary Provost](https://www.google.com/search?q=100+Ways+to+Improve+Your+Writing+Gary+Provost) -- 158 pages of one-page craft rules, source of the sentence-length passage
 - [Style: Ten Lessons in Clarity and Grace](https://www.google.com/search?q=Style+Ten+Lessons+in+Clarity+and+Grace) -- The unparalleled book for writing
 - [The Craft of Writing Effectively -- Larry McEnerney](https://www.youtube.com/watch?v=vtIzMaLkCaM) -- Why value precedes clarity, and how readers' codes of value work
 - [The Science of Scientific Writing -- Gopen & Swan](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing) -- Topic and stress positions, subject--verb distance
