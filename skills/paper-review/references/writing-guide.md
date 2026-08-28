@@ -534,6 +534,7 @@ An optional section to thank people who were not paper authors, or (most often) 
 - **Ignore length at the beginning, content first.** Tell the story well; length would be ok at the end.
 - **Look for short lines at the end of the paragraph.** Rephrase the paragraph to reduce it. What is repeated? What uses many words instead of selecting the appropriate one?
 - **Appendix time!** What paragraphs, sections, comments, or details can you do without? Getting rid of sidenotes and less-essential experiments often makes the overall story simpler and clearer.
+- **Check the bottom line survived.** After a cut, find the sentence carrying the strongest result and confirm it is still there and still explicit. "We speed up inference 212x" is the kind of line that disappears into a shortened paragraph, because the words around it look more cuttable than they are.
 - **Consider all non-text objects.** Footnotes have a small font but take up space. Tables might use a smaller font or be wrapped (in a one-column format).
 
 ---
@@ -625,6 +626,12 @@ Avoid requiring the reader to understand terms or definitions from the text to g
 | `Lr \| k \| model` | `Learning rate \| depth \| model` |
 
 Full words are easier to parse, especially in figures. Use abbreviations only if: the table is too crowded, the abbreviation is well-known in the field, or it's an obvious part of the methodology (e.g., k-means).
+
+#### Every figure, table and appendix is referred to from the text
+
+Walk the list and check each one off. An unreferenced float is either dead weight or a reference
+the reader will never find, and the error survives many rounds of reading because nobody reads a
+paper looking for it.
 
 #### Caption placement and consistency
 
