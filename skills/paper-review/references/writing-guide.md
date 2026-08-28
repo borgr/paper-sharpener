@@ -160,6 +160,8 @@ Especially when sentence lengths vary, which makes it less boring. Beginner writ
 
 Still, length itself is rarely the defect. Before shortening, check what stands between the subject and its verb (see *Reduce the reader's mental load*).
 
+Judge a sentence against its neighbours. Two short ones in a row can tail off, so spend the short sentence on the payoff rather than on housekeeping, and let the last sentence carry enough weight to close the paragraph.
+
 ---
 
 ### Sentence Level
