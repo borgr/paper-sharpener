@@ -102,12 +102,12 @@ In most venues, every claim should be supported. Refrain from claiming what you 
 
 #### Explain, don't acknowledge
 
-Naming a difficulty is not the same as handling it. "The comparison is admittedly imperfect" or
-"this is a complex question" tells the reader you saw the problem and then walked past it, which
-costs more than saying nothing would. Either explain why the imperfection leaves the conclusion
-standing, or move the point to Limitations, where a reader expects things to be unresolved. An
-unexplained acknowledgment becomes the weakest line in the paper, because you pointed at it
-yourself.
+Naming a difficulty is not the same as handling it. "The comparison is admittedly imperfect" says
+you saw the problem and walked past it, which costs more than silence would. Either explain why the
+conclusion still stands, or move it to Limitations.
+
+Space is emphasis, so match it to importance. Three sentences on a minor caveat make it a major one,
+and the reader will take it as the paper's weak point because you gave it the room.
 
 #### A paper should support all depths of reading
 
