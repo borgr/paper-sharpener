@@ -100,6 +100,15 @@ In most venues, every claim should be supported. Refrain from claiming what you 
 
 > **Exercise:** "These failures, frequently dismissed as minor, carry rich information about model limitations." -- This needs a citation. Even this small example contains a claim ("frequently dismissed"). Prove to the reader so they can judge for themselves or dig deeper into the claim.
 
+#### Explain, don't acknowledge
+
+Naming a difficulty is not the same as handling it. "The comparison is admittedly imperfect" or
+"this is a complex question" tells the reader you saw the problem and then walked past it, which
+costs more than saying nothing would. Either explain why the imperfection leaves the conclusion
+standing, or move the point to Limitations, where a reader expects things to be unresolved. An
+unexplained acknowledgment becomes the weakest line in the paper, because you pointed at it
+yourself.
+
 #### A paper should support all depths of reading
 
 - Some readers just try to figure if they want to read -- make them already remember your finding even if they don't.
@@ -196,6 +205,15 @@ In strong sentences, the subject is not just present but actively performing a c
 
 > **Example:** "Another trait that agents are expected to show is a manner of interacting with an environment." becomes "Agents are also expected to interact with the environment."
 
+#### Say what is, most of the time
+
+A sentence that defines its claim against what it is not makes the reader hold two things in order
+to learn one. "The effect is not driven by frequency" leaves them without the cause. "The effect
+follows from length" states it and drops the negation. Provost's rule is to state it positively
+most of the time, the qualifier mattering because a negation is right when the reader already
+expects the positive and needs it removed. The same cost applies to the *X rather than Y* frame,
+where the reader carries the rejected half in order to understand the kept one.
+
 #### When there is parallelism in meaning, make it also parallel in form
 
 Across sentences, when there is a general and a specific claim, they are easier to understand if the two sentences share the same components with the details changing. Such parallelism may include repeating keywords, making the same connections.
@@ -251,6 +269,14 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 - **"Not X, but Y" structure:** "It was not the mass, but **the kinetic energy**, that dictated the outcome." -- Signals a deliberate choice and places stress exactly on your intended target.
 - **Em-dash appositive:** "This model utilizes a dynamic learning rate -- **a critical departure from standard architectures** -- to ensure convergence." -- Forces the reader to linger on a specific concept.
 - **Tool vs. result emphasis:** "The high-resolution data was gathered using **the new laser spectrometer**." (tool emphasis) vs. "Using the new laser spectrometer, we gathered **high-resolution data**." (result emphasis)
+
+#### Asides go into the sentence or out of the paper
+
+Parentheses, footnotes, and em-dash asides all tell the reader the same thing, that the material
+was not worth a sentence. It then belongs inside the sentence where it has to earn its place, or
+in an appendix, or nowhere. Provost quotes Twain's hostile verdict on parentheses and Barrymore's
+line that a footnote is like a knock at the door on your honeymoon. The working test is whether
+removing the aside changes the claim. When it does not, cut it. When it does, promote it.
 
 #### Reduce the reader's mental load
 
@@ -407,6 +433,7 @@ An extension of the abstract that sets up the problem, explains its importance, 
 - **The most valuable asset.** Title, abstract, and introduction are the most read parts of a paper. Make them clear, invest the most time, and write them to encourage reading more or include everything you want readers to remember even if they won't read further.
 - **Should I cite everything here? No.** Add only what helps the story. If there is relevant but not needed information, find a place (related work?) for it.
 - **Convey the main messages, don't build suspense.** An introduction should not end without the reader understanding the main thing they need to know. Most readers would not read most of the rest of the paper. So a paper should have all takeaway messages early. E.g., "We perform a thorough investigation" becomes "Our analysis shows..." and "We explain why could it work?" becomes "We find it works because..."
+- **Open once.** A common introduction writes a strong opening and then starts again with a second one, usually because both were written on different days and both read well alone. A reader who has been launched twice trusts neither launch. Keep the opening that leads into the problem you actually solve and cut the other, even when the other is the better sentence.
 - **Refer to other sections.** Add links to where you discuss each concept more. This makes the introduction a kind of table of contents where readers can jump to parts that interest them.
 
 #### Motivation
@@ -653,6 +680,7 @@ Check your target venue's requirements and maintain consistency across all graph
 
 - **`\citep`** -- default citation. Use when attributing but the author name should not be part of the sentence. E.g., `This tips document was later shown to be the best in the world \citep{Einst1991}.`
 - **`\citet`** -- use when referring to a paper directly. E.g., `\citet{Choshen} showed that` produces "Choshen (2053) showed that."
+- **Naming a source costs attention, so spend it.** `\citet` puts a surname into the reader's working memory, which pays off when the name carries weight or when the sentence is about that work's claim. Otherwise `\citep` assigns the credit without asking the reader to hold anything. A paragraph that names five authors has named none of them.
 - **`\cite` warning:** It is defined differently depending on the style used. Sometimes it acts as `\citet` and sometimes `\citep`. This means, for example, that being rejected from ICML and submitting to ICLR would have changed all citations.
 
 ### Conferences often dictate the format, but you can still remove the ugly boxes
