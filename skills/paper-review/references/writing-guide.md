@@ -19,7 +19,7 @@ Read the subsection you need rather than the whole guide; each is self-contained
 
 | Section | Subsections |
 |---|---|
-| [Writing](#writing) | [Where to Start?](#where-to-start) · [Story Level](#story-level) · [Section Level](#section-level) · [Paragraph Level](#paragraph-level) · [Sentence Level](#sentence-level) · [Word Choice](#word-choice) · [Exercises](#exercises) · [Collaboration in Writing](#collaboration-in-writing) |
+| [Writing](#writing) | [Story Level](#story-level) · [Section Level](#section-level) · [Paragraph Level](#paragraph-level) · [Sentence Level](#sentence-level) · [Word Choice](#word-choice) · [Before-and-After Examples](#before-and-after-examples) · [Collaboration in Writing](#collaboration-in-writing) |
 | [Sections in an Academic Paper](#sections-in-an-academic-paper) | [Title](#title) · [Abstract](#abstract) · [Introduction](#introduction) · [Background](#background) · [Method (Body)](#method-body) · [Experimental Setup](#experimental-setup) · [Results](#results) · [Analysis](#analysis) · [Related Work](#related-work) · [Conclusion and Discussion](#conclusion-and-discussion) · [Limitations](#limitations-section-or-in-text) · [Appendix](#appendix) · [Acknowledgments](#acknowledgments) |
 | [Common Academic Writing Needs](#common-academic-writing-needs) | [Shortening (General)](#shortening-general) |
 | [Rebuttal](#rebuttal) | Nine rules on tone and hierarchy, then [Rebuttal Sources](#rebuttal-sources) |
@@ -31,18 +31,6 @@ Read the subsection you need rather than the whole guide; each is self-contained
 ---
 
 ## Writing
-
-### Where to Start?
-
-#### Top-Down
-
-A good option for coherence is to first understand the story. What is the main idea you want to convey (a new method, a surprising finding, criticism on X)? Then write an argumentation line. Then make it into an abstract or introduction following exactly this line of thought. Last, fill the needed sections given by this story.
-
-#### Bottom-Up
-
-A good option when it is hard to start is to begin by filling in the obvious information. When there are very clear results, strong bottom lines, a method that would be long to describe anyway. Sometimes, when all the main content is already there, connecting it becomes clearer and easier. This is very useful when there is clear and distinct content and less so when there are many results, some of which may not eventually support the main story.
-
----
 
 ### Story Level
 
@@ -56,7 +44,7 @@ Writers reach for "and," "furthermore," and "moreover." Readers of an argument l
 
 Almost always, the way towards a finding was not direct and involved roundabouts. Those do not matter anymore, neither is the chronological order of experiments you've made, nor including everything you tested along the way.
 
-**What should you do?** Discuss only the things that teach the reader, add the background that leads to understanding them, and feel good about your way that led you here, even if others would not share it.
+**What should you do?** Discuss only the things that teach the reader, add the background that leads to understanding them.
 
 #### Reader's attention is your most valuable asset, use it well
 
@@ -81,15 +69,27 @@ Papers have different readers with different goals. Tell them:
 
 As an expert, you know more than anyone else. You've learnt many interesting things. But eventually, you want to tell the readers something they will remember and follow. So often all kinds of side findings should stay out of the paper if they do not contribute to the main finding (or at least move to an appendix). Everything in the paper should follow the purpose of telling a coherent story.
 
-Beginners are just learning how to fill the page; expert writers learn to cut down.
-
 Concentrate your tale to a very specific line of thought, usually a single finding supported by evidence. Everything should serve this tale -- if it doesn't, then why is it here? If the tale is not convincing, you are overclaiming. And if your findings do not give this bottom line, maybe you're telling the wrong story and capturing the interest of the wrong people (who would be disappointed by the findings).
 
-**Why cut?**
+#### One voice across the paper
 
-- Because the readers are there due to the previous parts calling them to read the paper (e.g., title) and the audience of something else is likely just not that audience.
-- Because it competes on attention with more relevant parts.
-- Because it makes for easy reading and is the way that people consume information.
+Several authors over several months leave the voice drifting between sections. Four sweeps, each
+over the whole paper at once, which is why they belong to a pass rather than to a section.
+
+- **One name per object.** The same thing is a model in the intro, a network in the method and an
+  architecture in the results. Collect the names used for each object, keep one, and check the
+  abstract and the captions, which drift furthest because they are written apart from the text.
+- **One confidence level per finding.** "We show" in the abstract against "may suggest" in the
+  discussion is one result at two strengths, and the reader believes the weaker one. Compare every
+  hedged claim with the abstract's version of the same claim.
+- **One tense.** See *The paper happens in the present*. Read the first sentence of every section
+  in a row to catch the drift.
+- **One grammatical form for headings.** "Evaluating Transfer", "We Evaluate Transfer" and
+  "Evaluation" in one table of contents. Read the headings on their own.
+
+Register drifts in the section written last and most freely, usually the analysis or the discussion,
+where rhetorical questions and "interestingly" cluster. The reverse case is a paper bullish for eight
+pages that recants in Limitations.
 
 #### Minor Tips
 
@@ -101,7 +101,7 @@ Concentrate your tale to a very specific line of thought, usually a single findi
 
 In most venues, every claim should be supported. Refrain from claiming what you can't show, to a believable amount. Every claim you make, whether it is the main claim of the paper or a side claim, should be cited, explained, or supported by new evidence (experiment or proof).
 
-> **Exercise:** "These failures, frequently dismissed as minor, carry rich information about model limitations." -- This needs a citation. Even this small example contains a claim ("frequently dismissed"). Prove to the reader so they can judge for themselves or dig deeper into the claim.
+> **Example:** "These failures, frequently dismissed as minor, carry rich information about model limitations." -- This needs a citation. Even this small example contains a claim ("frequently dismissed"). Prove to the reader so they can judge for themselves or dig deeper into the claim.
 
 #### Explain, don't acknowledge
 
@@ -149,7 +149,7 @@ Most paragraphs continue some idea from the last paragraph. A part of the idea o
 
 This allows skimming and ensures the important messages are salient. Starting with a clear claim or an organizing order helps the reader understand how the details come together. This follows the same underlying thought as Beginning of Section and Introduction.
 
-> **Exercise:** Read a whole section but only the first sentences of paragraphs (perhaps two). If you don't understand the section, use the ending of the last paragraph. If there are paragraphs you don't understand, they are not written well enough; perhaps two should be concatenated, or an opening should be written. If the flow is not convincing, maybe the paragraph order is wrong.
+> **Example:** Read a whole section but only the first sentences of paragraphs (perhaps two). If you don't understand the section, use the ending of the last paragraph. If there are paragraphs you don't understand, they are not written well enough; perhaps two should be concatenated, or an opening should be written. If the flow is not convincing, maybe the paragraph order is wrong.
 
 **Example openings:**
 
@@ -171,7 +171,7 @@ If you have many "or"s and "and"s or complicated structure, perhaps you are tryi
 
 #### Short statements are strong
 
-Especially when sentence lengths vary, which makes it less boring. Beginner writers use very simple sentences all the time, which makes it seem simple and makes no rhythm. It often makes us avoid those short sentences as we grew out of them. This is wrong. Did you hear the vibrations of the last sentence? A short sentence stands out and is memorable as it can all be kept in memory at the same time, or because attention is not spread, or because the rhythm stops. Regardless, it is a tool one might use.
+Especially when sentence lengths vary, which makes it less boring. A short sentence stands out and is memorable as it can all be kept in memory at the same time, or because attention is not spread, or because the rhythm stops. Regardless, it is a tool one might use.
 
 Still, length itself is rarely the defect. Before shortening, check what stands between the subject and its verb (see *Reduce the reader's mental load*).
 
@@ -339,7 +339,7 @@ is finished. Three worth counting:
 
 ---
 
-### Exercises
+### Before-and-After Examples
 
 Improve the following:
 
@@ -362,7 +362,7 @@ When you note something worth changing, in most stages of writing it is better t
 
 ---
 
-### More Exercises
+### More Before-and-After Examples
 
 **Exercise 1:** Prefer actions as verbs, familiar objects as nouns.
 
