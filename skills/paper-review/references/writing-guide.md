@@ -10,6 +10,9 @@ This guide splits tips into several categories:
 
 It focuses on scientific and domain-specific papers (not Nature or Science), but much of it may be useful for other purposes.
 
+Each entry states the defect, how to spot it, and the repair. Motivation, anecdote and who said it
+first belong in the sources, so an entry grown past those three parts should be trimmed back.
+
 ## Contents
 
 Read the subsection you need rather than the whole guide; each is self-contained.
@@ -106,8 +109,7 @@ Naming a difficulty is not the same as handling it. "The comparison is admittedl
 you saw the problem and walked past it, which costs more than silence would. Either explain why the
 conclusion still stands, or move it to Limitations.
 
-Space is emphasis, so match it to importance. Three sentences on a minor caveat make it a major one,
-and the reader will take it as the paper's weak point because you gave it the room.
+Space is emphasis, so match it to importance. Three sentences on a minor caveat make it a major one.
 
 #### A paper should support all depths of reading
 
@@ -155,9 +157,9 @@ This allows skimming and ensures the important messages are salient. Starting wi
 - "There are many ways to open a can efficiently." [list of ways]
 - "Solving the superintelligence problem is more complex than one thinks." [complexities, perhaps with references to misconceptions]
 
-**Find the opening by cutting.** Provost's test is to cross out every sentence until you reach
-one you cannot do without. That sentence is the opening. It catches the paragraph that spends two
-sentences arriving, which rewording never fixes.
+**Find the opening by cutting.** Cross out every sentence until you reach one you cannot do
+without. That sentence is the opening. This catches the paragraph that spends two sentences
+arriving.
 
 #### Use of Examples
 
@@ -207,12 +209,10 @@ In strong sentences, the subject is not just present but actively performing a c
 
 #### Say what is, most of the time
 
-A sentence that defines its claim against what it is not makes the reader hold two things in order
-to learn one. "The effect is not driven by frequency" leaves them without the cause. "The effect
-follows from length" states it and drops the negation. Provost's rule is to state it positively
-most of the time, the qualifier mattering because a negation is right when the reader already
-expects the positive and needs it removed. The same cost applies to the *X rather than Y* frame,
-where the reader carries the rejected half in order to understand the kept one.
+Flag *not X*, *rather than*, and *instead of* framings. "The effect is not driven by frequency"
+leaves the reader without the cause. "The effect follows from length" states it and drops the
+negation. A negation is right only when the reader already expects the positive and needs it
+removed.
 
 #### When there is parallelism in meaning, make it also parallel in form
 
@@ -272,16 +272,14 @@ If you want a part emphasized, beyond bold, the writing can do it. By default, t
 
 #### Asides go into the sentence or out of the paper
 
-Parentheses, footnotes, and em-dash asides all tell the reader the same thing, that the material
-was not worth a sentence. It then belongs inside the sentence where it has to earn its place, or
-in an appendix, or nowhere. Provost quotes Twain's hostile verdict on parentheses and Barrymore's
-line that a footnote is like a knock at the door on your honeymoon. The working test is whether
-removing the aside changes the claim. When it does not, cut it. When it does, promote it.
+Parentheses, footnotes, and em-dash asides all tell the reader the material was not worth a
+sentence. Test whether removing it changes the claim. When it does not, cut it. When it does,
+promote it into the sentence, where it has to earn its place, or into an appendix.
 
 #### Reduce the reader's mental load
 
 - **Shorten the distance between connected concepts.** Many concepts in a sentence are connected (nouns to verbs, verbs to objects, adjectives to nouns, adverbs to verbs). Reducing the distance between related concepts, or the tree depth, makes it easier to follow. The defect is the distance, not the length: a long sentence whose subject and verb sit together reads easily, so close the gap before you start cutting.
-- **Ration the numbers.** A reader carries about one number out of a paragraph. Provost's version is that "statistics should be sprinkled like pepper, not smeared like butter." When three numbers compete, keep the one the argument turns on and move the rest to a table.
+- **Ration the numbers.** A reader carries about one number out of a paragraph. When three compete, keep the one the argument turns on and move the rest to a table.
 - **Reduce ambiguities.** When there is more than one meaning, the reader needs to solve it by context. Coreferences and anaphors like "it," "this," and "those" may refer to many entities. Use them, but sparsely.
 
 ---
@@ -332,13 +330,13 @@ Examples: very, really, quite, extremely.
 
 Authors commonly repeat their word arsenal a lot. If you know you overuse "so" or "Indeed" or "still" or "in fact," consider changing or deleting those uses.
 
-Sentence shapes repeat the same way, and they are harder to notice than words. A two-clause
-statement of the form *X is Y, and Z* stacks up invisibly, as does the *A rather than B* counter,
-which reads as precision the first time and as a habit the third. Watch the *and* whose second
-clause is the conclusion of the first rather than its equal, standing in for *so* or a colon.
-It appends a claim without naming the relation. Question words standing in for a statement,
-"what the model knows" or "how far it reaches," are fine in moderation and wearing in bulk.
-Count the shapes once a section is finished, since the pattern is invisible while drafting.
+Sentence shapes repeat the same way and are harder to spot than words. Count them once a section
+is finished, since the pattern is invisible while drafting. Four worth counting:
+
+- *X is Y, and Z*, the two-clause statement
+- *A rather than B*, the counter
+- the *and* whose second clause is the conclusion of the first, standing in for *so*
+- a question word where a statement belongs, "what the model knows" or "how far it reaches"
 
 ---
 
@@ -433,7 +431,7 @@ An extension of the abstract that sets up the problem, explains its importance, 
 - **The most valuable asset.** Title, abstract, and introduction are the most read parts of a paper. Make them clear, invest the most time, and write them to encourage reading more or include everything you want readers to remember even if they won't read further.
 - **Should I cite everything here? No.** Add only what helps the story. If there is relevant but not needed information, find a place (related work?) for it.
 - **Convey the main messages, don't build suspense.** An introduction should not end without the reader understanding the main thing they need to know. Most readers would not read most of the rest of the paper. So a paper should have all takeaway messages early. E.g., "We perform a thorough investigation" becomes "Our analysis shows..." and "We explain why could it work?" becomes "We find it works because..."
-- **Open once.** A common introduction writes a strong opening and then starts again with a second one, usually because both were written on different days and both read well alone. A reader who has been launched twice trusts neither launch. Keep the opening that leads into the problem you actually solve and cut the other, even when the other is the better sentence.
+- **Open once.** A common introduction writes a strong opening and then starts again with a second one. Keep the one that leads into the problem you actually solve and cut the other, even when the other is the better sentence.
 - **Refer to other sections.** Add links to where you discuss each concept more. This makes the introduction a kind of table of contents where readers can jump to parts that interest them.
 
 #### Motivation
@@ -534,7 +532,7 @@ An optional section to thank people who were not paper authors, or (most often) 
 - **Ignore length at the beginning, content first.** Tell the story well; length would be ok at the end.
 - **Look for short lines at the end of the paragraph.** Rephrase the paragraph to reduce it. What is repeated? What uses many words instead of selecting the appropriate one?
 - **Appendix time!** What paragraphs, sections, comments, or details can you do without? Getting rid of sidenotes and less-essential experiments often makes the overall story simpler and clearer.
-- **Check the bottom line survived.** After a cut, find the sentence carrying the strongest result and confirm it is still there and still explicit. "We speed up inference 212x" is the kind of line that disappears into a shortened paragraph, because the words around it look more cuttable than they are.
+- **Check the bottom line survived.** After a cut, find the sentence carrying the strongest result and confirm it is still there and still explicit. "We speed up inference 212x" is the kind of line that disappears into a shortened paragraph.
 - **Consider all non-text objects.** Footnotes have a small font but take up space. Tables might use a smaller font or be wrapped (in a one-column format).
 
 ---
@@ -629,9 +627,7 @@ Full words are easier to parse, especially in figures. Use abbreviations only if
 
 #### Every figure, table and appendix is referred to from the text
 
-Walk the list and check each one off. An unreferenced float is either dead weight or a reference
-the reader will never find, and the error survives many rounds of reading because nobody reads a
-paper looking for it.
+Walk the list and check each one off. An unreferenced float either gets a reference or gets cut.
 
 #### Caption placement and consistency
 
@@ -687,7 +683,7 @@ Check your target venue's requirements and maintain consistency across all graph
 
 - **`\citep`** -- default citation. Use when attributing but the author name should not be part of the sentence. E.g., `This tips document was later shown to be the best in the world \citep{Einst1991}.`
 - **`\citet`** -- use when referring to a paper directly. E.g., `\citet{Choshen} showed that` produces "Choshen (2053) showed that."
-- **Naming a source costs attention, so spend it.** `\citet` puts a surname into the reader's working memory, which pays off when the name carries weight or when the sentence is about that work's claim. Otherwise `\citep` assigns the credit without asking the reader to hold anything. A paragraph that names five authors has named none of them.
+- **Naming a source costs attention, so spend it.** Use `\citet` when the name carries weight or when the sentence is about that work's claim. Otherwise `\citep` assigns the credit without asking the reader to hold a surname.
 - **`\cite` warning:** It is defined differently depending on the style used. Sometimes it acts as `\citet` and sometimes `\citep`. This means, for example, that being rejected from ICML and submitting to ICLR would have changed all citations.
 
 ### Conferences often dictate the format, but you can still remove the ugly boxes
