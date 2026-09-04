@@ -179,6 +179,8 @@ Still, length itself is rarely the defect. Before shortening, check what stands 
 
 Judge a sentence against its neighbours. Two short ones in a row can tail off, so spend the short sentence on the payoff rather than on housekeeping, and let the last sentence carry enough weight to close the paragraph.
 
+Read the paragraph aloud. Rhythm and length are audible before they are visible, and the sentence you run out of breath in is the one to split -- no counting finds it as fast.
+
 ---
 
 ### Sentence Level
@@ -317,6 +319,12 @@ Once a term is attached to a concept it never varies again in the paper. Readers
 The inverse costs as much. If "technique" names the algorithm, the protocol, and the analysis, no sentence tells the reader which one it is about. Reserve a distinct word per concept and hold the mapping in both directions.
 
 Drift is invisible while writing and obvious in a list, so spot it by listing the words the draft uses for each of its central objects and reading the list rather than the paragraphs.
+
+#### Notation is the same rule with symbols
+
+The mapping runs both ways here too, and it breaks louder -- a reader who takes your alpha for the field's alpha misreads every equation it appears in and never finds out. Define each symbol where it first appears, keep one symbol per object, and avoid a letter your field has already committed to something else.
+
+Two habits pay for themselves. Prose that returns to a symbol names it as well as writes it ("the temperature tau" rather than the bare glyph), because a reader who lost the definition cannot search for a Greek letter. And a symbol used two or three times is usually cheaper spelled out, since the definition costs more to hold than the shorthand saves.
 
 #### Minimize abbreviations and jargon
 
@@ -651,6 +659,8 @@ Full words are easier to parse, especially in figures. Use abbreviations only if
 #### Every figure, table and appendix is referred to from the text
 
 Walk the list and check each one off. An unreferenced float either gets a reference or gets cut.
+
+Then check the built PDF rather than the source for where each float landed. A figure that floats two pages past its first reference is read without the sentence that explains it, and the repair is a smaller float or a different placement rather than a rewritten caption.
 
 #### Caption placement and consistency
 
