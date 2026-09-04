@@ -244,6 +244,8 @@ However, overuse may be tedious. Don't use two linkers in the same sentence.
 
 This gives a feeling of continuity, reduces the mental load, and creates surprise. When new information is introduced, we already have all the context to understand it, and as it is new, we expect the next sentence to also talk about it. It also plays with stress where the opening (topic) and ending (surprise) have the most attention, as they are close to a long pause and have little cognitive burden.
 
+The principle is not only pairwise. A paragraph's openers form a chain of their own, and sentences that each open on a new subject read as choppy however clear each one is.
+
 **Examples:**
 
 - If we want the efficient aspect to be the focus: "Large Language Model (LLM) scaling laws predict the performance of an LLM **efficiently**"

@@ -141,7 +141,8 @@ the rewrite. This should feel like a single exchange, not a process.
 **Focused pass:** Identify writing issues at paragraph and sentence/word level:
 
 1. **Paragraph level** — Does each paragraph open with its point? Is there flow between
-   paragraphs?
+   paragraphs? Read the first five to seven words of each sentence in the paragraph as a list —
+   openers that do not chain mean a flow defect even where every sentence is clear.
 2. **Sentence level** — Strength (subject performs the verb), stress control, precision,
    parallelism, familiar-before-new, mental load
 3. **Word level** — Nominalizations, filler verbs, hedging, jargon, ambiguous pronouns
