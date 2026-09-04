@@ -213,7 +213,7 @@ In strong sentences, the subject is not just present but actively performing a c
 
 #### Say what is, most of the time
 
-Flag *not X*, *rather than*, and *instead of* framings. "The effect is not driven by frequency"
+Watch your *not X*, *rather than*, and *instead of* framings. "The effect is not driven by frequency"
 leaves the reader without the cause. "The effect follows from length" states it and drops the
 negation. A negation is right when the reader already expects the positive and needs it removed,
 which is the *not X, but Y* stress device below.
@@ -310,7 +310,7 @@ Two questions decide it. Would a reader notice, and does the second use do work 
 
 **The reflex fix is a synonym, and it is almost always the wrong repair.** A repeated word is usually the symptom of a repeated job one level up, so repair it where the job is. Two paragraphs opening alike usually means the two paragraphs are doing one job between them (see *Avoid repetitions* under *Minor Tips*, which governs repeated information rather than repeated wording).
 
-Close calls break the same way every time. Varying a term costs precision the author cannot see, and repeating a shape costs attention any reader will report. So when in doubt, repeat the term and vary the shape.
+Close calls break the same way every time. Varying a term costs precision you cannot see, and repeating a shape costs attention any reader will report. So when in doubt, repeat the term and vary the shape.
 
 #### One word per concept, and one concept per word
 
@@ -318,13 +318,7 @@ Once a term is attached to a concept it never varies again in the paper. Readers
 
 The inverse costs as much. If "technique" names the algorithm, the protocol, and the analysis, no sentence tells the reader which one it is about. Reserve a distinct word per concept and hold the mapping in both directions.
 
-Drift is invisible while writing and obvious in a list, so spot it by listing the words the draft uses for each of its central objects and reading the list rather than the paragraphs.
-
-#### Notation is the same rule with symbols
-
-The mapping runs both ways here too, and it breaks louder -- a reader who takes your alpha for the field's alpha misreads every equation it appears in and never finds out. Define each symbol where it first appears, keep one symbol per object, and avoid a letter your field has already committed to something else.
-
-Two habits pay for themselves. Prose that returns to a symbol names it as well as writes it ("the temperature tau" rather than the bare glyph), because a reader who lost the definition cannot search for a Greek letter. And a symbol used two or three times is usually cheaper spelled out, since the definition costs more to hold than the shorthand saves.
+Drift is invisible while writing and obvious in a list, so spot it by listing the words you used for each of your central objects and reading the list rather than the paragraphs.
 
 #### Minimize abbreviations and jargon
 
