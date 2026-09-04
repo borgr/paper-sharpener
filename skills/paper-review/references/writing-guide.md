@@ -179,8 +179,6 @@ Still, length itself is rarely the defect. Before shortening, check what stands 
 
 Judge a sentence against its neighbours. Two short ones in a row can tail off, so spend the short sentence on the payoff rather than on housekeeping, and let the last sentence carry enough weight to close the paragraph.
 
-Read the paragraph aloud. Rhythm and length are audible before they are visible, and the sentence you run out of breath in is the one to split -- no counting finds it as fast.
-
 ---
 
 ### Sentence Level
