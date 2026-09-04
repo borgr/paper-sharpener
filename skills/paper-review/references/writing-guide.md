@@ -1,25 +1,13 @@
 # Academic Writing Guide
 
-## About This Guide
-
-This guide splits tips into several categories:
-
-- Tips related to **specific sections** of an academic paper
-- Tips for writing at **different granularities** (sentence, paragraph, section, story)
-- **Tools beyond writing**: LaTeX, rebuttal, and graphics
-
-It focuses on scientific and domain-specific papers (not Nature or Science), but much of it may be useful for other purposes.
-
-Each entry gives the defect, how to spot it, and the repair. Motivation and anecdote belong in the
-sources, so trim an entry that has grown past those three parts.
-
 ## Contents
 
-Read the subsection you need rather than the whole guide; each is self-contained.
+Tips for scientific and domain-specific papers, not Nature or Science. Read the subsection you
+need rather than the whole guide; each is self-contained.
 
 | Section | Subsections |
 |---|---|
-| [Writing](#writing) | [Story Level](#story-level) · [Section Level](#section-level) · [Paragraph Level](#paragraph-level) · [Sentence Level](#sentence-level) · [Word Choice](#word-choice) · [Before-and-After Examples](#before-and-after-examples) · [Collaboration in Writing](#collaboration-in-writing) |
+| [Writing](#writing) | [Story Level](#story-level) · [Section Level](#section-level) · [Paragraph Level](#paragraph-level) · [Sentence Level](#sentence-level) · [Word Choice](#word-choice) · [Collaboration in Writing](#collaboration-in-writing) · [Before-and-After Examples](#before-and-after-examples) |
 | [Sections in an Academic Paper](#sections-in-an-academic-paper) | [Title](#title) · [Abstract](#abstract) · [Introduction](#introduction) · [Background](#background) · [Method (Body)](#method-body) · [Experimental Setup](#experimental-setup) · [Results](#results) · [Analysis](#analysis) · [Related Work](#related-work) · [Conclusion and Discussion](#conclusion-and-discussion) · [Limitations](#limitations-section-or-in-text) · [Appendix](#appendix) · [Acknowledgments](#acknowledgments) |
 | [Common Academic Writing Needs](#common-academic-writing-needs) | [Shortening (General)](#shortening-general) |
 | [Rebuttal](#rebuttal) | Nine rules on tone and hierarchy, then [Rebuttal Sources](#rebuttal-sources) |
@@ -216,6 +204,8 @@ leaves the reader without the cause. "The effect follows from length" states it 
 negation. A negation is right when the reader already expects the positive and needs it removed,
 which is the *not X, but Y* stress device below.
 
+The positive has to come from the draft's own evidence. "The effect follows from length" is available only where the draft shows length, and where it shows no cause at all the negation stays and the unnamed cause is the finding.
+
 #### When there is parallelism in meaning, make it also parallel in form
 
 Across sentences, when there is a general and a specific claim, they are easier to understand if the two sentences share the same components with the details changing. Such parallelism may include repeating keywords, making the same connections.
@@ -344,7 +334,7 @@ Examples: very, really, quite, extremely.
 
 **Avoid adjectives that fit everywhere.** A broad adjective usually hides a more informative one, and the specific one lets you say more while staying just as true. "Difficult" becomes costly, slow, brittle, or intractable; "good" becomes faster, cheaper, or more accurate. The specific adjective also tends to ask for a comparison -- faster than what, measured how -- and when you cannot supply it, the vagueness sits in the argument rather than in the wording.
 
-**More generally, reach for the most specific word of any part of speech.** E.g., "decrease" becomes "plummets."
+**More generally, reach for the most specific word of any part of speech.** E.g., "decrease" becomes "plummets." The specific word has to be true of the size of the effect, since a two-point drop does not plummet. Precision here is earned from the numbers rather than chosen for force.
 
 **Beware of "simply," "easily," "trivially," "clearly," and their friends.** You gain nothing, but you can lose much. When the reader doesn't understand, such a word might just add to the frustration.
 
@@ -363,16 +353,6 @@ is finished. Three worth counting:
 
 ---
 
-### Before-and-After Examples
-
-Improve the following:
-
-> "However, repeatedly checking results as data is collected increases the chance of falsely detecting an effect that isn't actually there, making the results more complex."
-
-Better: "However, repeatedly checking results as data is collected complicates the above as it increases the chance of falsely detecting an effect that isn't actually there."
-
----
-
 ### Collaboration in Writing
 
 #### Reduce the overall workload, comment only when necessary
@@ -386,21 +366,21 @@ When you note something worth changing, in most stages of writing it is better t
 
 ---
 
-### More Before-and-After Examples
+### Before-and-After Examples
 
-**Exercise 1:** Prefer actions as verbs, familiar objects as nouns.
+**Prefer actions as verbs, familiar objects as nouns.**
 
 | Before | After |
 |--------|-------|
 | "The effect of scaling model size differs between scaled families, but only slightly" | "Model families scale quite similarly by model size" |
 
-**Exercise 2:** Nominalization of verbs (using a verb/action as a noun).
+**Nominalization of verbs (using a verb/action as a noun).**
 
 | Before | After |
 |--------|-------|
 | "While the majority of shared knowledge representation occurs among languages using the same script, there is still some knowledge transfer between languages with different scripts." | "While knowledge is mostly shared among languages using the same script, there is still some knowledge transfer between languages with different scripts." |
 
-**Exercise 3:** Reduce unnecessary words.
+**Reduce unnecessary words.**
 
 | Before | After |
 |--------|-------|
@@ -410,7 +390,7 @@ When you note something worth changing, in most stages of writing it is better t
 | "We gather a quantification of the amount of words in every sentence." | "We quantify the amount of words in every sentence." |
 | "We collected together existing human-model conversations datasets" | "We collected existing human-model conversation datasets" |
 
-**Exercise 4:** Symmetry between sentences.
+**Symmetry between sentences.**
 
 | Before | After |
 |--------|-------|
@@ -418,11 +398,17 @@ When you note something worth changing, in most stages of writing it is better t
 
 Symmetry between sentences or phrases improves understandability. Who is the active object (we/plugin) should stay consistent.
 
-**Exercise 5:** Reduce fillers.
+**Reduce fillers.**
 
 | Before | After |
 |--------|-------|
 | "Is it possible for a model to learn from a gradient step in the same way it learns from context?" | "Can a model learn from a gradient step in the same way it learns from context?" |
+
+**Connect to the last statement.**
+
+| Before | After |
+|--------|-------|
+| "However, repeatedly checking results as data is collected increases the chance of falsely detecting an effect that isn't actually there, making the results more complex." | "However, repeatedly checking results as data is collected complicates the above as it increases the chance of falsely detecting an effect that isn't actually there." |
 
 ---
 
@@ -529,11 +515,13 @@ Reflects on the contribution, broader impact, or future directions.
 
 ### Limitations (Section or In-Text)
 
+Acknowledges constraints, uncertainties, or weaknesses in the work.
+
 - **Space should align with the problem's importance.** When you dedicate a lot of text it implies this is an important point. Sometimes, the explanation is convincing but so long that it makes the reader convinced it is a crucial problem regardless.
 
 ### Appendix
 
-Acknowledges constraints, uncertainties, or weaknesses in the work.
+Holds what the paper needs to be reproducible or complete but cannot afford in the main text.
 
 - **The place for too-technical details and needs for reproduction.** This includes documentation, numbers, graphs, statistics, etc.
 - **Additional findings which are too interesting to ignore** but you will not have a separate paper for. Note that this will likely still get ignored.
@@ -689,7 +677,7 @@ Check your target venue's requirements and maintain consistency across all graph
 - [ ] Does the legend repeat or have overlapping information?
 - [ ] Remove title
 - [ ] If sent to arXiv -- remove spaces from figure name
-- [ ] Glimpse the graph for just a second -- did you look at the main thing? No? Fix. (popup, eye-path)
+- [ ] Name the largest, highest-contrast, most central element -- if it is not the message, the saliency is wrong (popup, eye-path)
 - [ ] Is it better to explicitly write shown values (e.g., on top of bar plots)?
 - [ ] If relevant, does it convey significance or variation? Error bars, shades in lines, etc.
 - [ ] If so, do you need STD or Standard Error? (often the latter)
@@ -745,6 +733,8 @@ Check your target venue's requirements and maintain consistency across all graph
 ---
 
 ## Useful Words
+
+The table reads in one direction. Use it to decode a word met in someone else's paper, or to find the single word that replaces a clause which would not shorten any other way. A plain phrase already in the draft is not improved by a Latinate synonym, and swapping one in works against *Minimize abbreviations and jargon*.
 
 | Word | Meaning |
 |------|---------|

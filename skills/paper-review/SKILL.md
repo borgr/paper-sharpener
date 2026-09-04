@@ -551,7 +551,8 @@ uses inconsistent notation with Equation 2", "Figure 3 is unreadable at print si
 Typos, grammar, formatting, minor reference issues. These are quick, local, and low-risk.
 Do not give them a place in the ordered queue. Apply them as a batch sweep: once before the
 queue, for the free wins, and again after the last structural change, because rewrites
-introduce fresh typos. A sentence polished before a Tier 1 rewrite deletes it is work done
+introduce fresh typos. One agreement covers the whole sweep, and it is the only edit in this
+process the author does not approve line by line. A sentence polished before a Tier 1 rewrite deletes it is work done
 twice.
 
 ### Step 3.4: Interactive triage

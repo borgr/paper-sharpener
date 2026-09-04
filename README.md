@@ -95,7 +95,7 @@ Each paper repo also gets its own memory automatically. The skills remember your
 
 ## 🤝 Contributing
 
-This is an evergrowing project — contributions welcome!
+This is an evergrowing project — contributions welcome! [CONTRIBUTING.md](CONTRIBUTING.md) covers what an entry needs and what does not belong in an agent-facing guide.
 
 - **Improve an existing skill** — Edit the `SKILL.md` or reference files under `skills/<skill-name>/` and open a PR
 - **Add a new skill** — Create a new directory under `skills/` with a `SKILL.md` file (use the existing skills as a template)
