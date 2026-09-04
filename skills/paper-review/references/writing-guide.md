@@ -93,7 +93,7 @@ pages that recants in Limitations.
 
 #### Minor Tips
 
-- **Avoid repetitions:** A good structure presents what it needs once (motivation in advance, details in a separate section) and then almost never repeats it. Then, every topic is almost standalone. For example, an experiment should be mostly understood and the details (e.g., what model is that?) are found somewhere else.
+- **Avoid repetitions:** A good structure presents what it needs once (motivation in advance, details in a separate section) and then almost never repeats it. Then, every topic is almost standalone. For example, an experiment should be mostly understood and the details (e.g., what model is that?) are found somewhere else. This governs information, so see *Before smoothing a repetition, find out which kind it is* for wording.
 - **The paper happens in the present.** Previous work, previous sections, and previously run experiments are in the past.
 - **When many examples could fit, pick the example that would return later.** Don't waste the mental fatigue of the reader on understanding just a concept; pick the one you later have a graph on, lay the ground to the issue that this opens later on, or have the same example returning with variations each time.
 
@@ -144,6 +144,8 @@ It is often easier to understand a concept by a specific example where the reade
 #### Connect to the last statement
 
 Most paragraphs continue some idea from the last paragraph. A part of the idea often repeats something that was said before (e.g., revisiting the same object mentioned before, but not with coreference to be standalone when skimming), has a connecting word (e.g., "Regardless"), or just continues the same idea.
+
+Test it by reading the first five to seven words of every sentence in order. The openers carry the continuity, and a break shows there and nowhere else (see *Familiar concepts come first, surprises and new information come later*).
 
 #### Start by stating the point of the paragraph
 
@@ -222,6 +224,8 @@ Inside a sentence, phrases may also ease reading.
 
 > **Example:** "Prompt Agreement as Evidence for Agreement of the Ground Truth" becomes "Prompt Agreement as Evidence for Ground Truth Agreement"
 
+Readers cash the parallel, and a sentence whose shape repeats the previous one is read faster. An unearned parallel is therefore a broken promise -- three sentences in one shape say the three contents are the same kind of thing, and a reader who finds otherwise pays twice.
+
 #### Explicit is often better than implicit
 
 Using pronouns/coreferences (it, they, his) requires effort from the reader to resolve and remember who we are talking about. Similarly, quantifiers (many, different) often obscure rather than help. Try replacing such words with their specific names.
@@ -233,6 +237,8 @@ Using pronouns/coreferences (it, they, his) requires effort from the reader to r
 | "such/given/many/various studies" | "efficiency studies" |
 | "He" | "Dan" |
 | "There are different methods to understand what knowledge they use to perform a given task through custom datasets and metrics" | "Interpretability and analysis methods were devised to link internal knowledge to model outputs." |
+
+**Not every pronoun.** A pronoun with exactly one possible referent is faster to read than the repeated noun, so this applies where the reader could pick the wrong antecedent ("the model" -- which one) rather than where only one candidate is in view.
 
 #### Link to the last paragraph or sentence (but only once)
 
@@ -295,6 +301,22 @@ People will NOT understand. Assume they already half missed what was up until no
 #### Claim importance in your readers' words
 
 Every community keeps its own vocabulary for what counts -- reproducible, sample-efficient, faithful, deployable, identifiable. Importance asserted in your own words does not register. Collect the value words of your target venue, from its call for papers or the titles it recently accepted, and use them in the sentences that do the work of claiming importance.
+
+#### Before smoothing a repetition, find out which kind it is
+
+Two questions decide it. Would a reader notice, and does the second use do work the first did not. Noticed and working is a figure, so keep it. Unnoticed and working is cohesion -- fixed terms, topic chains, matched section shapes -- and most of a sound paper is built from it. Noticed and idle is the only one to cut. Unnoticed and idle is harmless, and editing there is how drafts get worse.
+
+**The reflex fix is a synonym, and it is almost always the wrong repair.** A repeated word is usually the symptom of a repeated job one level up, so repair it where the job is. Two paragraphs opening alike usually means the two paragraphs are doing one job between them (see *Avoid repetitions* under *Minor Tips*, which governs repeated information rather than repeated wording).
+
+Close calls break the same way every time. Varying a term costs precision the author cannot see, and repeating a shape costs attention any reader will report. So when in doubt, repeat the term and vary the shape.
+
+#### One word per concept, and one concept per word
+
+Once a term is attached to a concept it never varies again in the paper. Readers take a new word to mean a new thing, so moving between "method," "approach," and "procedure" for one object makes a careful reader hunt for the distinction and a hurried one believe there are three objects.
+
+The inverse costs as much. If "technique" names the algorithm, the protocol, and the analysis, no sentence tells the reader which one it is about. Reserve a distinct word per concept and hold the mapping in both directions.
+
+Drift is invisible while writing and obvious in a list, so spot it by listing the words the draft uses for each of its central objects and reading the list rather than the paragraphs.
 
 #### Minimize abbreviations and jargon
 

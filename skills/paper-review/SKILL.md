@@ -107,7 +107,8 @@ This way, if a session is interrupted, nothing is lost.
 **Last updated:** [date]
 
 ## Author Conventions
-<!-- Intentional choices that reviewers should not flag -->
+<!-- Intentional choices that reviewers should not flag. Including the term table: one row per
+     concept, the single allowed surface form, and the near-synonyms banned for this paper -->
 
 ## Standing Instructions
 <!-- Persistent directives for all future review sessions -->
@@ -259,13 +260,26 @@ when it cannot be parallelised.
   at a conference is often still cited as the preprint it started as.
 - **Claim attribution.** Does each cited work support the claim attached to it, or a
   neighbouring one?
+- **Repetition counts.** Three counts, over the prose sections only, since a CV or bibliography
+  swamps every one of them with its own boilerplate. The first word and first two words of every
+  sentence, sorted. Sentence lengths in reading order, looking for runs rather than variance.
+  Four-word sequences used three or more times. Count them with a throwaway command rather than by
+  eye — over a few hundred sentences an estimate reads as confidently as a count and is not one.
+  Report them and do not triage. Unlike the rest of this pass they need judgement, so they seed
+  Tier 2 and 3 rather than Tier 0, and two of them escalate upward — a column of "We" openings
+  reports a topic-structure fault, and drift across a synonym cluster reports conceptual confusion.
+  The reasons to give the author are in the guide — *Familiar concepts come first, surprises and new
+  information come later* for the openers, *Short statements are strong* for the length runs, *One
+  word per concept, and one concept per word* for the drift, and *Before smoothing a repetition, find
+  out which kind it is* before proposing any repair.
 
 Verify citations against an authoritative source — ACL Anthology, DBLP, OpenReview, the
 publisher's own page — and never from memory. If no lookup is available in this session, do
 not guess: list the citations that need checking and hand the list to the user.
 
-Report what you find and do not triage it. These findings enter Phase 3 as **Tier 0**
-(Step 3.3): the author's only question is which side is right, not whether to fix it.
+Report what you find and do not triage it. Everything but the repetition counts enters
+Phase 3 as **Tier 0** (Step 3.3): the author's only question is which side is right, not
+whether to fix it.
 
 ---
 
@@ -518,7 +532,8 @@ comparison, an unresolved reference, a citation with the wrong venue. These are 
 suggestions and do not get an accept/reject/defer decision. Present each with both
 conflicting values and ask which is correct, then fix. If the author says the manuscript is
 right and the check was wrong, record that under `## Author Conventions` so it is not raised
-again.
+again. The repetition counts from that pass are the exception. They need judgement, so they
+enter as Tier 2 or Tier 3 and take a queue position like any other item at that tier.
 
 **Tier 1 — Structural (highest leverage, do first)**
 These affect the paper's narrative, framing, contribution claims, experimental design,

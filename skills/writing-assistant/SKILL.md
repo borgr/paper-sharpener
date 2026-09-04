@@ -145,7 +145,8 @@ the rewrite. This should feel like a single exchange, not a process.
    openers that do not chain mean a flow defect even where every sentence is clear.
 2. **Sentence level** — Strength (subject performs the verb), stress control, precision,
    parallelism, familiar-before-new, mental load
-3. **Word level** — Nominalizations, filler verbs, hedging, jargon, ambiguous pronouns
+3. **Word level** — Nominalizations, filler verbs, hedging, jargon, ambiguous pronouns, and
+   one concept drifting across several words
 
 **Full pass:** Analyze at all levels, high to low:
 
