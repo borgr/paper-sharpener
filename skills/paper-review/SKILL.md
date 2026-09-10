@@ -243,6 +243,12 @@ Check the paper against itself and against its own citations, before Phase 3 ope
 pass finds are facts about the manuscript rather than suggestions about it: an inverted ratio
 and a mis-attributed venue read as fluent text and survive every other kind of reading.
 
+**Run `self-check` first**, from the paper's own directory, and bring its findings into this
+pass — it settles the mechanical half deterministically, so the reviewer personas below spend
+their judgement on what a script cannot decide. Pass `--draft` unless the answer to Step 1.3's
+draft-stage question was camera-ready or submission, because scaffolding is a defect only when
+it ships.
+
 **Run this concurrently with Phase 2 where you can.** Nothing here depends on the reviews, so
 spawn the reviewer subagents first and check while they work; run it strictly before them only
 when it cannot be parallelised.
