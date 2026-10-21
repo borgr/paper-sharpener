@@ -1,12 +1,12 @@
 {
   "name": "paper-sharpener",
-  "description": "Academic paper review and writing improvement skills for Claude Code",
-  "version": "1.0.0",
+  "description": "Academic paper review, writing improvement and recommendation-letter skills for Claude Code",
+  "version": "1.1.0",
   "authors": [
     { "name": "Leshem Choshen", "url": "https://github.com/borgr" },
     { "name": "Yotam Perlitz", "url": "https://github.com/ype" }
   ],
   "homepage": "https://github.com/borgr/paper-sharpener",
   "repository": "https://github.com/borgr/paper-sharpener",
-  "keywords": ["academic-writing", "paper", "review", "rebuttal", "latex"]
+  "keywords": ["academic-writing", "paper", "review", "rebuttal", "latex", "recommendation-letter", "reference-letter"]
 }

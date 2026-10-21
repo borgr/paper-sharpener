@@ -5,14 +5,14 @@
     "url": "https://github.com/borgr"
   },
   "metadata": {
-    "description": "Agentic skills for writing and reviewing academic papers."
+    "description": "Agentic skills for writing and reviewing academic papers and recommendation letters."
   },
   "plugins": [
     {
       "name": "paper-sharpener",
       "source": "./",
-      "description": "Academic paper review and writing improvement skills for Claude Code",
-      "version": "1.0.0"
+      "description": "Academic paper review, writing improvement and recommendation-letter skills for Claude Code",
+      "version": "1.1.0"
     }
   ]
 }

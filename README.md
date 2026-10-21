@@ -28,6 +28,12 @@ Improves your academic writing at any granularity — from a single sentence to 
 
 > **Try:** *"improve this paragraph"* · *"rewrite this section"* · *"check my writing"* · *"make this sentence stronger"*
 
+### 📨 Recommendation Letter
+
+Writes, revises and retargets recommendation and evaluation letters: admission, fellowships, postdoc and faculty jobs, tenure and external review. It works top-down, the way committees read: genre and call first, then the verdict and how believable its rank is, then the evidence, then what dilutes it, then sentences. Each finding says what is wrong, why it matters to the reader (with the evidence behind it), and a suggested rewrite; typos are fixed directly and listed. The tips come from letter-writing guides, committee testimony, and empirical studies of letters and their outcomes, critiques included.
+
+> **Try:** *"improve this recommendation letter"* · *"write a letter for my student from these notes"* · *"adapt this letter for the Rothschild call"* · *"I don't know this student well, should I write?"*
+
 ---
 
 ## 📦 Installation
@@ -36,8 +42,8 @@ Improves your academic writing at any granularity — from a single sentence to 
 <summary><b>Plugin install (recommended)</b></summary>
 <br>
 
-The repository is its own plugin marketplace. Add it once, install from it, and both skills
-are available in every project:
+The repository is its own plugin marketplace. Add it once, install from it, and every skill
+is available in every project:
 
 ```sh
 claude plugin marketplace add borgr/paper-sharpener
@@ -57,6 +63,7 @@ individual skill directories rather than cloning the repository over that path:
 git clone git@github.com:borgr/paper-sharpener.git ~/paper-sharpener
 ln -s ~/paper-sharpener/skills/paper-review ~/.claude/skills/paper-review
 ln -s ~/paper-sharpener/skills/writing-assistant ~/.claude/skills/writing-assistant
+ln -s ~/paper-sharpener/skills/recommendation-letter ~/.claude/skills/recommendation-letter
 ```
 
 Symlinks rather than copies, so `git pull` in the clone updates the installed skills.

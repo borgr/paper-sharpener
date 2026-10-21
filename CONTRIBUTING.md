@@ -56,11 +56,21 @@ skills/paper-review/references/writing-guide.md the tips, and the only copy
 skills/paper-review/references/reviewer-personas.md
 skills/writing-assistant/SKILL.md               the lightweight interactive pass
 skills/writing-assistant/references/            symlink to the paper-review references
+skills/recommendation-letter/SKILL.md           revising, drafting and retargeting letters
+skills/recommendation-letter/references/letter-guide.md  the letter tips (above sentence level)
+skills/recommendation-letter/references/letter-types.md  what each genre and call expects
+skills/recommendation-letter/references/sources.md       the evidence, and how far it was checked
+skills/recommendation-letter/tools/letter_check.py       the deterministic cues
 ```
 
-The guide is one file. `skills/writing-assistant/references/writing-guide.md` is a symlink to it,
-so editing either path changes both skills. A single skill directory copied out of the repo needs
-that symlink resolved or the copy has no guide.
+The guide is one file. `skills/writing-assistant/references/writing-guide.md` and
+`skills/recommendation-letter/references/writing-guide.md` are symlinks to it, so editing any
+path changes every skill. A single skill directory copied out of the repo needs that symlink
+resolved or the copy has no guide. On Windows, git checks a symlink out as a text file holding
+the path unless `core.symlinks` is on; the skills say to follow that path.
+
+Letter entries follow the same defect, cue, repair shape, plus a **Why** with source keys that
+resolve in `sources.md`. A figure goes into a letter entry only from a row marked *verified*.
 
 ## Before opening a PR
 
