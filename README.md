@@ -120,3 +120,6 @@ This is an evergrowing project — contributions welcome! [CONTRIBUTING.md](CONT
 The writing tips were mostly written by [Leshem Choshen](https://github.com/borgr), with the help of the community.
 The skill adaptations were done by [Yotam Perlitz](https://github.com/ype).
 The improvements are now up to all of us — used it? Adapted it? Aid others.
+
+---
+More tools and guides by Leshem Choshen: [tools](https://borgr.github.io/tools/) · [guides](https://borgr.github.io/guides/) · [homepage](https://borgr.github.io/)
