@@ -6,11 +6,15 @@ used by *The close reader looks for what is missing* in `letter-guide.md`), leng
 pitfalls. Rules change every cycle: the call text overrides this file. Figures marked
 *(check)* were not confirmed for the current cycle.
 
+**A call with no section here** (OGS, NSERC, Vanier, a lab's own form): take the expected items of
+the nearest genre below, then read the call's own criteria and referee questions and add them.
+Say which section you borrowed from.
+
 ## Contents
 
 | Genre | Stance | Sections |
 |---|---|---|
-| Recommendation | Advocate and rank | [PhD and MSc admission](#phd-and-msc-admission) · [Industry PhD fellowships](#industry-phd-fellowships) · [Foundation and government fellowships](#foundation-and-government-fellowships) · [Israeli calls](#israeli-calls) · [Postdoc positions](#postdoc-positions) · [Faculty jobs](#faculty-jobs) |
+| Recommendation | Advocate and rank | [PhD and MSc admission](#phd-and-msc-admission) · [When the writer is not the supervisor](#when-the-writer-is-not-the-supervisor) · [Research engineer, staff and pre-doctoral positions](#research-engineer-staff-and-pre-doctoral-positions) · [Industry PhD fellowships](#industry-phd-fellowships) · [Foundation and government fellowships](#foundation-and-government-fellowships) · [Israeli calls](#israeli-calls) · [Postdoc positions](#postdoc-positions) · [Faculty jobs](#faculty-jobs) |
 | Evaluation | Assess at arm's length | [Tenure, promotion and external review](#tenure-promotion-and-external-review) |
 | Other | Short stance notes | [Sponsor and host letters](#sponsor-and-host-letters) · [Visa expert letters](#visa-expert-letters) · [Award endorsements](#award-endorsements) · [Industry references](#industry-references) |
 
@@ -53,6 +57,27 @@ the supervision arrangement (including co-advisors), and that funding and a plac
 are in hand if that is the institute's rule. Keep the evaluation separate from the enthusiasm
 of a recruiter: the rank and the evidence carry the same weight as in any other letter, and the
 reader discounts praise from someone who wants the candidate.
+
+## When the writer is not the supervisor
+
+A co-mentor, collaborator or senior colleague writes a different letter from the advisor's.
+
+- **Say the role in the first lines,** and how the work was shared with the supervisor. The
+  reader will have the advisor's letter too, and needs to know which part this writer saw.
+- **Credit the part you saw.** Name the project you did together and the candidate's share of
+  it; leave the rest of the record to the advisor.
+- **Rank against the pool you know.** A collaborator's pool is "the students and junior
+  researchers I have worked with", not "my students". Size it all the same.
+- **A cost to the writer is a strong signal only once the relationship is stated.** "I recommend
+  him despite my own interest in keeping him" reads as calibration when the reader knows the
+  writer works with him; before that, it reads as an employer letting someone go.
+
+## Research engineer, staff and pre-doctoral positions
+
+Read like a postdoc letter with the weight moved from independent research to delivery: what the
+candidate built, who uses it, how fast they learn a new stack, and whether they would grow into a
+researcher if that is the path. Rank against engineers or junior researchers the writer has
+worked with.
 
 ## Industry PhD fellowships
 

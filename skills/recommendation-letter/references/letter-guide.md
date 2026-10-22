@@ -133,13 +133,18 @@ cohort ranks [fortnow]; famous-name comparisons backfire [leiter-thread].
 ### Your credentials calibrate, they do not impress
 
 **Defect.** The writer paragraph lists status (h-index, titles, collaborator counts) without
-telling the reader how to decode the writer's scale.
+telling the reader how to decode the writer's scale. Or its facts are stale (an "incoming" title,
+an old email, a count that no longer matches), or it sits as a footnote inside the verdict
+sentence, where it interrupts the one sentence the reader must not lose.
 
 **Cue.** Remove the writer paragraph: does the reader lose information about the candidate's
-standing, or only about the writer's?
+standing, or only about the writer's? Check its title, email and counts against the writer
+profile. Check where its footnote mark falls.
 
 **Repair.** Give the comparison pool, how often you write letters this strong, and where past
-students went. Keep one status line; readers do weigh seniority.
+students went. Keep one status line; readers do weigh seniority. Update stale facts from the
+profile. Move a footnote mark off the verdict sentence, to the writer's name or the end of the
+first paragraph.
 
 **Boundary.** Where the call asks for the referee's standing (tenure, visa), status is
 evidence and belongs.

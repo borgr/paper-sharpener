@@ -78,8 +78,21 @@ If the letter lives in a synced repository (an Overleaf git clone), pull before 
 before writing back: the writer often edits it in the browser between turns.
 
 Ask, unless already clear: what genre (`letter-types.md` Contents), for what call, read by whom
-(field, country), and whether the writer is also the candidate's prospective advisor. Ask for
-the call text or the referee form if there is one, and note its cap for this session.
+(field, country), and the writer's relation to the candidate (advisor, prospective advisor,
+co-mentor, collaborator). Ask for the call text or the referee form if there is one, and note its
+cap for this session. When a read-only review is wanted, say so and skip the pulls and writes.
+
+**Read the template before the letter.** Classes differ: find where the candidate's names come
+from (`\candidate{}{}` or `\newcommand{\fname}`), where the recipient is (`\recipient`, or a "To:"
+line tucked into another field), what the letterhead fields say (`\name`, `\position`, `\email`),
+and whether the body uses `\opening`. Check that the candidate macros name *this* candidate; a
+copied letter often keeps the previous one. Read commented-out passages too: they are the
+writer's own drafts and evidence.
+
+**A reused letter goes stale.** If the letter was written for an earlier cycle or another
+candidate, check what has changed since: the writer's title, email and counts against the writer
+profile, the candidate's papers (a "submission" that is now accepted, a venue or year that was
+wrong), and the program's name.
 
 ### Step 1 — Mechanical pass
 
@@ -91,6 +104,9 @@ python3 tools/letter_check.py path/to/main.tex [--cap-words N]   # `py` on Windo
 
 Pass `--cap-words` only when the call sets a cap. The output feeds the levels below and decides
 nothing on its own; its advisory counts are prompts, not findings.
+
+Then **draft all the findings** (Step 3) for yourself before sweeping, because the sweep needs to
+know which sentences they will rewrite.
 
 ### Step 2 — Mechanical batch (no permission needed)
 
@@ -105,8 +121,11 @@ directly and **list what changed** in one block ("Fixed without asking: 6 — 'r
 - **When a mechanical fix needs a fact** (the addressee, the program's name, a cap), ask for it
   in one short block of questions *before* the findings, not as a finding.
 
-- **Only sentences no higher finding will rewrite.** Sentences a Level 0–3 finding touches are
-  swept after that finding is settled (Step 4), so no polish is done twice.
+- **Only sentences no Level 0–1 finding will rewrite.** Those are swept after the finding is
+  settled (Step 4), so no polish is done twice. Lower-level findings rarely delete a sentence, so
+  their sentences are swept now.
+- **A fix that exposes another problem waits.** Adding a missing `\opening`, for example, prints a
+  "To:" line that may be stale. List the dependency in the question block and ask first.
 - **Grammar, not rewording.** Fix agreement, articles, prepositions, tense, spelling. Anything
   that rephrases (an awkward non-native idiom, a long sentence) is a Level 5 finding with its
   own What and Why, since the voice is the writer's.
@@ -120,6 +139,15 @@ fix at a higher level rewrites what lies under it, so **stop reporting at the hi
 has findings**, finish that level with the writer, then descend. Within a level, lead with the
 finding whose fix changes the committee's decision most, not the one that appears first in the
 letter.
+
+**Facts to confirm come first, at any level.** A wrong or stale fact (a venue or year the sources
+contradict, a submission that is now accepted, an author position the letter misstates, a stale
+writer title or count) goes in a short block above the findings, with the source, whatever level
+its finding sits at. A factual error that ships is worse than any wording.
+
+**Previews.** After the current level's findings, list the lower levels' findings one line each
+when the writer asks for the whole picture, or in a read-only review. The full block for each
+comes when its level is reached.
 
 Level 0 holds only problems that change what the letter *is*: the wrong genre stance, a call
 rule that would get it discarded or unread (over a hard cap, a referee question left
@@ -141,7 +169,9 @@ expected items in `letter-types.md`.
 **Group findings that land on one passage.** When several findings, of any level, touch the same
 paragraph, present them as one unit led by the highest-level one: one points list, one
 Before/After that applies them together, and a line per finding saying what it changed and why.
-Separate Afters for one paragraph force the writer to merge them by hand.
+Separate Afters for one paragraph force the writer to merge them by hand. Number the changes
+inside a group (3a, 3b…) so each can still be accepted or rejected on its own, which keeps *one
+issue per edit*. A sentence that moves belongs to the group of the passage it moves into.
 
 **Budget:** at most five findings per level per round. If there are more, give the five that
 change the most for the reader and say how many remain.
@@ -206,9 +236,12 @@ typos.
 
 ### Step 5 — Close
 
-If a TeX compiler is available, compile and look at page 1 as an image before reporting. Macros
+If a TeX compiler is available, compile and look at page 1 as an image before reporting (without
+one, read the class file to see what the macros print). Macros
 expand into sentences nobody wrote ("recommend her to the PhD Admissions Committee as a PhD
-student"), and notes, headers and page breaks only show in the output.
+student"), and notes, headers and page breaks only show in the output. Compare the page count
+with the version before your edits: an edit that pushes the signature block onto a page of its
+own needs a tighter wording, not a new page.
 
 Report what changed by level, what was deferred, and, if a rank was given, offer to record it in
 the ledger. Offer the next level down if findings remain there.
